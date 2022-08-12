@@ -1,0 +1,359 @@
+#wrap{width: 100%; min-width:1920px;}
+#header{
+    width: 100%; height: 100px; min-width:1920px;
+    /*  background-color: #fff; */
+    /*     border-bottom: 2px solid #ccc; */
+    box-sizing: border-box;
+    position: fixed; top:0; left: 0; z-index: 500;
+}
+.headerin{
+    width: 1200px; height: 100px;
+    margin: 0 auto; position: relative;
+}
+.logo{
+    display: block; width: 78px; height: auto;
+    position: relative; padding-top:28px;
+}
+.logo a{display: block;}
+.logo img{position: absolute; top:28px; left:0;}
+.white{display: none;}
+.black{display: none;}
+.gnb{
+    width: 690px; position: absolute;
+    top: 50%; left:408px; transform: translateY(-50%);
+    display: none; flex-flow: row wrap; justify-content: space-between;
+}
+
+.gnb li a{
+    display: block; font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px; font-weight: 700; line-height: 18px;
+}
+.mBtn{
+    cursor: pointer; position: absolute;
+    top:50%; right: 0; transform: translateY(-50%);
+}
+.mBtn.openM{font-size: 22px;}
+.mBtn.closeM{font-size: 26px; display: none;}
+/***** Header 끝 *****/
+#mainVisual{width: 100%; height: 100vh; position: relative;}
+.mBg{width: calc((100% - 1200px)/2 + 282px); height: 100vh; background-color: #013220;}
+.mainin{
+    width: 1200px; height: 100vh; position: absolute;
+    top:0; left:50%; transform: translateX(-50%);
+}
+.double{position: absolute; bottom: 0; left: 0;}
+.mvTxt{
+    position: absolute; top:calc(50% - 100px); right:0;
+    transform: translateY(calc(-50% + 100px));
+    text-align: right;
+}
+.mvTxt h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 70px; font-weight: 700; line-height: 70px;
+    padding: 0 0 0;
+}
+.bar{
+    margin: 45px 0; width: 78px; height: 10px;
+    background-color: #000; display: inline-block;
+}
+.mainWords{font-size: 20px; line-height: 26px;}
+.name{
+    line-height: 20px; font-weight: bold;
+    display: inline-block; margin-bottom: 16px;
+}
+/***** Mainvisual 끝 *****/
+#about{width: 100%; height: 100vh; background-color: #eee;}
+section h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700; font-size:40px; line-height: 40px;
+    padding:100px 0 90px; text-align: center;
+}
+#about h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700; font-size: 24px; line-height: 24px;
+    margin-bottom: 33.5px;
+}
+.tit{
+    display: inline-block; width: 102px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700; font-size: 17px; line-height: 22px;
+}
+/* 일괄적용 */
+.aboutin{width: 1200px; margin: 0 auto;}
+.aboutTop{
+    width: 100%;
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+    margin-bottom: 180px;
+}
+.aboutTop li p{font-size: 16px; line-height: 29px;}
+.l2{position: relative; width: 277px;}
+.txt{
+    position: absolute; top:57.5px; left:102px;
+}
+.aboutBtm{
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+}
+.l4{width: 306px; margin-right: 180px;}
+.l4 p{font-size: 17px; line-height: 17px; font-weight: bold;}
+.l4 .words{
+    font-size: 16px; line-height: 22px; font-weight: normal;
+    margin-top:25px;
+}
+.l5{width: 690px; position: relative;}
+.l5 .tit{float: left;}
+.icon{
+    width: 588px; float: right; cursor: pointer;
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+}
+.icon li:hover{opacity: 0.7;}
+.s1{margin-bottom: 40px;}
+.s2 .icon{justify-content: left;}
+.s2 .icon li{margin-right: 40px;}
+.s2 .icon li:last-child{margin-right: 0;}
+.sTxt ul li{
+    position: absolute; bottom:0; right: 0;
+    width: 306px; font-size: 16px; line-height: 22px;
+    display: none;
+}
+.sTxt ul .g1{display: block;}
+/***** About 끝 *****/
+#container{width: 1200px; margin: 0 auto;}
+.display{display: flex; flex-flow: row wrap; justify-content: space-between;}
+#container>div{width: 100%;}
+.more{position: absolute;}
+.more p{
+    font-family: 'Noto Sans KR', sans-serif; display: inline;
+    font-size: 17px; font-weight: 700; line-height: 17px;
+}
+.moreBtn{font-size: 17px; line-height: 17px;}
+.cTxt{width: 282px;}
+.right{text-align: right;}
+.cLogo{width: 180px; height: auto; display: inline-block;}
+.cTxt .slogan{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px; line-height: 14px;
+    margin: 10px 0 56px;
+}
+h5{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 17px; font-weight: 700; line-height: 17px;
+    margin-bottom: 10px;
+}
+.cTxt p{
+    line-height: 16px; margin-bottom: 30px;
+    word-break: keep-all; color: #444;
+}
+.info p{line-height: 22px; margin-top: -3px;}
+.color{position: relative;}
+.cBox{
+    width: 254px; display: flex;
+    flex-flow: row wrap; justify-content: space-between;
+}
+.cBox li{
+    width: 78px; height: 20px;
+    font-size: 11px; line-height: 20px; text-align: center;
+}
+/* 일괄적용 */
+.resp1{margin-bottom: 150px;}
+.rImg{position: relative; width: 840px; height: 558px;}
+.rImg1{margin-left: -10px;}
+.iPhone{position: absolute; top: 195px; z-index: 200; overflow: hidden;}
+.iPhone .screen{
+    width: 96px; height:170px;
+    background:url(../images/c2_resp_s1_m.jpg) no-repeat 0 0 / 96px auto;
+    position: absolute; top:26px; left:17px;
+    transition: 5s ease;
+}
+.Macbook{position: absolute; top:67px; z-index: 200;}
+.Macbook .screen{
+    width: 455px; height:284px;
+    background:url(../images/c2_resp_s1_pc.jpg) no-repeat 0 0 / 455px auto;
+    position: absolute; top:25px; left:111px;
+    transition: 5s ease;
+}
+.iPad .screen{
+    width: 247px; height:328px;
+    background:url(../images/c2_resp_s1_tb.jpg) no-repeat 0 0 / 247px auto;
+    position: absolute; top:26px; left:24px;
+    transition: 5s ease;
+}
+.iPad{position: absolute; top:0; left:40px;}
+.rImg1 .iPhone{left:0;}
+.rImg1 .iPhone .screen:hover{background-position: 0 -638px;}
+.rImg1 .Macbook{left:163px;}
+.rImg1 .Macbook .screen:hover{background-position: 0 -1327px;}
+.rImg1 .iPad .screen:hover{background-position: 0 -1404px;}
+.rImg1 .more{left:10px; bottom: -3px;}
+.rImg1 .more:hover{color:#14008C;}
+.rImg1 .more p{margin-right: 8px;}
+.rImg1 .more .moreBtn{animation:btn 1s infinite linear normal;}
+@keyframes btn{
+    0%{transform: translateX(-4px);}
+    50%{transform: translateX(0px);}
+    100%{transform: translateX(-4px);}
+}
+.resp1 .cBox{position: absolute; right: 0;}
+.resp1 .b1{background-color: #14008C; color: #fff;}
+.resp1 .b2{
+    background-color: #FFFFFF; box-sizing: border-box;
+    border: 1px solid #000;
+}
+.resp1 .b3{background-color: #E8E8E8;}
+/* cont1 - responsive01 끝 */
+.resp2{flex-flow: row-reverse wrap; margin-bottom: 100px;}
+.rImg2{margin-right: -37px; height: 554px;}
+.rImg2 .iPhone .screen{
+    background-image: url(../images/c2_resp_s2_m.jpg);
+    transition: 1.5s ease;
+}
+.rImg2 .iPhone .screen:hover{background-position: 0 -151px;}
+.rImg2 .Macbook{right: 0;}
+.rImg2 .Macbook .screen{
+    background-image: url(../images/c2_resp_s2_pc.jpg);
+    transition: 2s ease;
+}
+.rImg2 .Macbook .screen:hover{background-position: 0 -411px;}
+.rImg2 .iPad .screen{
+    background-image: url(../images/c2_resp_s2_tb.jpg);
+    transition: 2s ease;
+}
+.rImg2 .iPad .screen:hover{background-position: 0 -463px;}
+.rImg2 .more{right:37px; bottom:-3px;}
+.rImg2 .more:hover{color:#E6000F;}
+.rImg2 .more p{margin-left: 8px;}
+.rImg2 .more .moreBtn{animation:btnR 1s infinite linear normal;}
+@keyframes btnR{
+    0%{transform: translateX(4px);}
+    50%{transform: translateX(0px);}
+    100%{transform: translateX(4px);}
+}
+.resp2 .b1{background-color: #E6000F; color: #fff;}
+.resp2 .b2{
+    background-color: #FFFFFF; box-sizing: border-box;
+    border: 1px solid #000;
+}
+.resp2 .b3{background-color: #F3F3F3;}
+/* cont1 - responsive02 끝 */
+.stan1{margin-bottom: 150px;}
+.sImg{position: relative;}
+.sImg1{height: 569px;}
+.iMac{position: relative;}
+.iMac .screen{
+    width: 540px; height: 323px;
+    background:url(../images/c2_stan_s1.jpg) no-repeat 0 0 / 540px auto;
+    position:absolute; top:23px; left:24px;
+    transition: 2s ease;
+}
+.sImg1 .iMac .screen:hover{background-position: 0 -532px;}
+.sImg1 .more{bottom: -3px;}
+.sImg1 .more:hover{color:#6ACAAE;}
+.sImg1 .more p{margin-right: 8px;}
+.sImg1 .more .moreBtn{animation:btn 1s infinite linear normal;}
+.stan1 .cTxt .color .cBox{width:166px; position: absolute; right: 0;}
+.stan1 .b1{background-color: #6ACAAE; color: #fff;}
+.stan1 .b2{background-color: #173655; color: #fff;}
+/* cont2 - standard01 끝 */
+.stan2{flex-flow: row-reverse wrap; margin-bottom: 100px;}
+.sImg2{height: 560px;}
+.sImg2 .iMac .screen{background-image: url(../images/c2_stan_s2.jpg);}
+.sImg2 .iMac .screen:hover{background-position: 0 -690px;}
+.sImg2 .more{bottom: -3px; right: 0;}
+.sImg2 .more:hover{color:#444;}
+.sImg2 .more p{margin-left: 8px;}
+.sImg2 .more .moreBtn{animation:btnR 1s infinite linear normal;}
+.stan2 .b1{background-color: #000000; color: #fff;}
+.stan2 .b2{
+    background-color: #FFFFFF; box-sizing: border-box;
+    border: 1px solid #000;
+}
+.stan2 .cTxt .color .cBox{width:166px;}
+/* cont2 - standard02 끝 */
+.mob{margin-bottom: 150px;}
+.cImg{position: relative; width: 700px; height: 560px; margin-left: -10px;}
+
+
+.phone{float: left;}
+.iPhone2{height: 516px; overflow: hidden;}
+.iPhone2 .screen{
+    width: 215px; height: 463px;
+    background:url(../images/c2_mob_s1.jpg) no-repeat 0 0 / 215px auto;
+    /* position:absolute; top:10px; left:167px; */
+    border-radius: 30px;
+    margin-top: -507px; margin-left: 167px;
+    transition: 2s ease;
+}
+.iPhone2:hover .screen{background-position: 0 -555px;}
+.phone2{width: auto; height: 507.5px; margin-left:-6px;}
+.phone2 img{width:auto; height: 100%;}
+.cImg .more{bottom: -3px; left:10px;}
+.cImg .more:hover{color:#79E1EC;}
+.cImg .more p{margin-right: 8px;}
+.cImg .more .moreBtn{animation:btn 1s infinite linear normal;}
+.mob .cTxt .color .cBox{width:166px; position: absolute; right: 0;}
+.mob .b1{background-color: #79E1EC; color: #fff;}
+.mob .b2{
+    background-color: #FFFFFF; box-sizing: border-box;
+    border: 1px solid #000;
+}
+/* cont3 - mobile 끝 */
+/***** Container 끝 *****/
+#footer{
+    width: 100%; display: flex; flex-flow: row wrap;}
+.sideBg{
+    width: calc((100% - 1200px)/2); height: 315px;
+    background-color: #013220;
+}
+.fRight{width: calc(100% - (100% - 1200px)/2); box-sizing: border-box;}
+.fTop{width: 100%; height: 230px; background-color: #eee;}
+.fTopin{
+    width: 1122px; padding-left: 78px;
+    display: flex; flex-flow: row nowrap; justify-content:space-between;
+    padding-top: 46px;
+}
+.contact h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px; font-weight: 700; line-height: 20px;
+    margin-bottom: 37px;
+}
+.contact p{font-size: 15px; line-height: 27px;} 
+.slBox{
+    width: 204px; height: 30px;
+    border: 1px solid #ccc; box-sizing: border-box;
+    background-color: #fff;
+    padding: 5px 10px; /* text-align: left; */
+    position: relative; cursor: pointer; z-index: 100;
+}
+.slBox.on{border: 1px solid #013220; box-sizing: border-box;}
+.sIco i{font-size: 14px; position: absolute; right: 10px;}
+.sIco .down{top:8px;}
+.sIco .up{top:8px; display: none;}
+.selected{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px; font-weight: 400; line-height: 18px;
+}
+.sList{
+    position: absolute; top:30px; left: -1px;
+    width: 204px; background-color: #fff;
+    border: 1px solid #ccc; box-sizing: border-box;
+    display: none;
+}
+.sList li a{display: block; padding:5px 10px; font-size: 13px; color:#444;}
+.sList li:hover a{color: #fff; background-color: #013220;}
+.fBtm{height: 85px;}
+.fBtm p{
+    padding-left: 78px; font-size: 13px; line-height: 27px;
+    padding-top: 15.5px; color:#444;
+}
+.go{
+    position: fixed; right:24px; bottom: 85px; 
+    border-radius: 25px; background-color: #013220;
+    width: 40px; height: 100px; /* transition: 0.2s; */
+    z-index: 400; /* opacity: 0; */ 
+}
+/* .go.on{opacity: 1;} */
+.go li{
+    width:100%; height: 50px;
+    text-align: center; cursor: pointer;
+}
+.go li i{color:#fff; font-size: 16px; line-height: 50px;}
+/* .go .top{padding-top: 10px;} */

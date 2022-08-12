@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>권은솔 03에몬스</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a274117f0f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="subBg">서브배경</div>
+            <div class="headerWrap">
+                <div class="headerin">
+                    <h1 class="logo"><a href="#">
+                        <img src="images/h_logo_t.png" class="logoM">
+                        <img src="images/h_logo.png" class="logoPC">
+                    </a></h1><!-- logo -->
+                    <a href="#" class="openM"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#" class="openC"><i class="fa-solid fa-book"></i></a>
+                    <div class="catalog"><a href="#">E&#45;catalog</a></div>
+                </div><!-- headerin -->
+                <nav class="menu">
+                    <ul class="util">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li class="mall"><a href="#">에몬스몰</a></li>
+                        <li class="showSc"><a href="#"><i class="fa-solid fa-magnifying-glass isc"></i></a></li>
+                    </ul><!-- util -->
+                    <div class="scBox">
+                        <input type="text" placeholder="검색어를 입력하세요" id="search" name="search">
+                        <a href="#" class="scBtn"><i class="fa-solid fa-magnifying-glass isBtn"></i></a>
+                        <div class="keyword">
+                            추천 검색어 : <a href="#">&#35;이모션매트리스</a> <a href="#">&#35;블리스</a>
+                        </div><!-- keyword -->
+                    </div><!-- scBox -->
+                    <a href="#" class="closeM"><i class="fa-solid fa-xmark"></i></a>
+                    <div class="gnb clear">
+                        <div class="depth1">
+                            <h3><a href="#">브랜드</a></h3>
+                            <ul class="depth2">
+                                <li>
+                                    <p>
+                                        <a href="#">회사소개</a>
+                                        <i class="fa-solid fa-angle-right isub"></i>
+                                    </p>
+                                    <ul class="depth3">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">경영철학</a></li>
+                                        <li><a href="#">연혁&#47;인증</a></li>
+                                        <li><a href="#">사업분야</a></li>
+                                        <li><a href="#">CI&#47;BI</a></li>
+                                        <li><a href="#">산업재산권</a></li>
+                                        <li><a href="#">에몬스장학회</a></li>
+                                        <li><a href="#">사회공헌</a></li>
+                                        <li><a href="#">인재채용</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                    </ul><!-- depth3 -->
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">브랜드스토리</a>
+                                        <i class="fa-solid fa-angle-right isub"></i>
+                                    </p>
+                                    <ul class="depth3 none">
+                                        <li><a href="#">브랜드 소개</a></li>
+                                        <li><a href="#">친환경 에몬스</a></li>
+                                        <li><a href="#">품질 에몬스</a></li>
+                                        <li><a href="#">디자인 에몬스</a></li>
+                                        <li><a href="#">수상내역 및 인증</a></li>
+                                        <li><a href="#">본사 견학신청</a></li>
+                                    </ul><!-- depth3 -->
+                                </li>
+                            </ul><!-- depth2 -->
+                        </div><!-- depth1 -->
+                        <div class="depth1">
+                            <h3><a href="#">제품소개</a></h3>
+                            <ul class="depth2">
+                                <li>
+                                    <p>
+                                        <a href="#">침실가구</a>
+                                        <i class="fa-solid fa-angle-right isub"></i>
+                                    </p>
+                                    <ul class="depth3">
+                                        <li><a href="#">침대</a></li>
+                                        <li><a href="#">협탁</a></li>
+                                        <li><a href="#">서랍장</a></li>
+                                        <li><a href="#">화장대</a></li>
+                                        <li><a href="#">스툴</a></li>
+                                        <li><a href="#">소가구</a></li>
+                                        <li><a href="#">패밀리침대</a></li>
+                                    </ul><!-- depth3 -->
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">매트리스</a>
+                                        <i class="fa-solid fa-angle-right isub"></i>
+                                    </p>
+                                    <ul class="depth3">
+                                        <li><a href="#">매트리스</a></li>
+                                        <li><a href="#">베개</a></li>
+                                    </ul><!-- depth3 -->
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">붙박이장&#47;옷장</a>
+                                        <i class="fa-solid fa-angle-right isub"></i>
+                                    </p>
+                                    <ul class="depth3">
+                                        <li><a href="#">붙박이장</a></li>
+                                        <li><a href="#">옷장</a></li>
+                                        <li><a href="#">슬라이딩장</a></li>
+                                        <li><a href="#">드레스룸</a></li>
+                                        <li><a href="#">서랍장</a></li>
+                                        <li><a href="#">소가구</a></li>
+                                    </ul><!-- depth3 -->
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">소파&#47;거실가구</a>
+                                        <i class="fa-solid fa-angle-right isub"></i>
+                                    </p>
+                                    <ul class="depth3">
+                                        <li><a href="#">소파</a></li>
+                                        <li><a href="#">패브릭 소파</a></li>
+                                        <li><a href="#">1인 리클라이너</a></li>
+                                        <li><a href="#">거실장</a></li>
+                                        <li><a href="#">소파 테이블</a></li>
+                                        <li><a href="#">장식장</a></li>
+                                        <li><a href="#">사이드 테이블</a></li>
+                                        <li><a href="#">소가구</a></li>
+                                    </ul><!-- depth3 -->
+                                </li>
+                                <li>
+                                    <P>
+                                        <a href="#">식탁&#47;주방가구</a>
+                                        <i class="fa-solid fa-angle-right isub"></i>
+                                    </P>
+                                    <ul class="depth3">
+                                        <li><a href="#">식탁세트</a></li>
+                                        <li><a href="#">식탁</a></li>
+                                        <li><a href="#">식탁의자</a></li>
+                                        <li><a href="#">식탁벤치</a></li>
+                                        <li><a href="#">소가구</a></li>
+                                    </ul><!-- depth3 -->
+                                </li>
+                                <li>
+                                    <p>
+                                        <a href="#">서재&#47;싱글룸</a>
+                                        <i class="fa-solid fa-angle-right isub"></i>
+                                    </p>
+                                    <ul class="depth3">
+                                        <li><a href="#">책상</a></li>
+                                        <li><a href="#">책상의자</a></li>
+                                        <li><a href="#">책장</a></li>
+                                        <li><a href="#">침대</a></li>
+                                        <li><a href="#">매트리스</a></li>
+                                        <li><a href="#">옷장</a></li>
+                                        <li><a href="#">서랍장</a></li>
+                                        <li><a href="#">소가구</a></li>
+                                    </ul><!-- depth3 -->
+                                </li>
+                                <li><p><a href="#">헬스케어</a></p></li>
+                            </ul><!-- depth2 -->
+                        </div><!-- depth1 -->
+                        <div class="depth1">
+                            <h3><a href="#">프로모션</a></h3>
+                            <ul class="depth2">
+                                <li><p><a href="#">에몬스 소식</a></p></li>
+                                <li><p><a href="#">광고&#47;홍보영상</a></p></li>
+                                <li><p><a href="#">셀럽&#47;프로모션</a></p></li>
+                                <li><p><a href="#">이벤트</a></p></li>
+                                <li><p><a href="#">제작지원&#47;협찬</a></p></li>
+                                <li><p><a href="#">보도자료</a></p></li>
+                            </ul><!-- depth2 -->
+                        </div><!-- depth1 -->
+                        <div class="depth1">
+                            <h3><a href="#">커뮤니티</a></h3>
+                            <ul class="depth2">
+                                <li><p><a href="#">칭찬합시다</a></p></li>
+                                <li><p><a href="#">후기 이벤트</a></p></li>
+                            </ul><!-- depth2 -->
+                        </div><!-- depth1 -->
+                        <div class="depth1">
+                            <h3><a href="#">고객지원</a></h3>
+                            <ul class="depth2">
+                                <li><p><a href="#">간편문의</a></p></li>
+                                <li><p><a href="#">FAQ</a></p></li>
+                                <li><p><a href="#">A&#47;S 신청</a></p></li>
+                                <li><p><a href="#">이전설치 서비스</a></p></li>
+                                <li><p><a href="#">고정시공 서비스</a></p></li>
+                            </ul><!-- depth2 -->
+                        </div><!-- depth1 -->
+                        <div class="depth1">
+                            <h3><a href="#">매장안내</a></h3>
+                            <ul class="depth2">
+                                <li><p><a href="#">매장찾기</a></p></li>
+                                <li><p><a href="#">VR 쇼룸</a></p></li>
+                                <li><p><a href="#">대리점 개설안내</a></p></li>
+                                <li><p><a href="#">가맹점 모집안내</a></p></li>
+                            </ul><!-- depth2 -->
+                        </div><!-- depth1 -->
+                    </div><!-- gnb -->
+                </nav><!-- menu -->
+            </div><!-- headerWrap -->
+        </header><!-- header -->
+        <section id="mainVisual">
+            <ul class="simg">
+                <li><a href="#"><!-- block -->
+                    <img src="images/mainvisual1_t.jpg" class="mvM">
+                    <img src="images/mainvisual1.jpg" class="mvPC">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/mainvisual2_t.jpg" class="mvM">
+                    <img src="images/mainvisual2.jpg" class="mvPC">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/mainvisual3_t.jpg" class="mvM">
+                    <img src="images/mainvisual3.jpg" class="mvPC">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/mainvisual4_t.jpg" class="mvM">
+                    <img src="images/mainvisual4.jpg" class="mvPC">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/mainvisual5_t.jpg" class="mvM">
+                    <img src="images/mainvisual5.jpg" class="mvPC">
+                </a></li>
+                <li><a href="#">
+                    <img src="images/mainvisual6_t.jpg" class="mvM">
+                    <img src="images/mainvisual6.jpg" class="mvPC">
+                </a></li>
+            </ul><!-- simg -->
+        </section><!-- mainVisual -->
+        <section id="container">
+            <div class="brand clear">
+                <h2 class="titM">BRAND</h2>
+                <div class="brL">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/d0Rn10LwVgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div><!-- brViedo -->
+                <div class="brR">
+                    <div class="brTxt">
+                        <h4>IT’S EMONS TIME</h4>
+                        <p class="mainTit">#요즘감성 #요즘공간</p>
+                        <p class="subTit">에몬스 2022 브랜드 필름</p>
+                        <p class="cont">새로워진 에몬스의 브랜드 필름 대공개!<br>
+                            요즘감성, 요즘공간 에몬스</p>
+                    </div>
+                    <div class="moreBtn"><a href="#">more</a></div>
+                </div><!-- brTxt -->
+                <ul class="phil">
+                    <li>
+                        <i class="fa-solid fa-seedling ieco"></i>
+                        <div>
+                            <p class="phTit">Eco Friendly</p>
+                            <p class="phCont">자연을 통해 생활공간을 아름답게 창조하고 다시 자연으로 되돌리는 것, 에몬스의 친환경 철학입니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-diagram-project iqual"></i>
+                        <div>
+                            <p class="phTit">Quality Philosophy</p>
+                            <p class="phCont">40여년 동안 축적된 기술력과 노하우, 에몬스 가구 명장정신으로 그 가치를 이어갑니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-layer-group ids"></i>
+                        <div>
+                            <p class="phTit">Design Philosophy</p>
+                            <p class="phCont">실용성을 넘어선 에몬스의 감성디자인은 공간의 새로운 가치를 만들어갑니다.</p>
+                        </div>
+                    </li>
+                </ul><!-- phil -->
+            </div><!-- brand -->
+            <div class="cur clear">
+                <div class="curin">
+                    <h2 class="titM">CURATION</h2>
+                    <ul class="curL">
+                        <li class="on"><a href="#">
+                            <img src="images/c2_cur1_m.jpg" class="cimgM">
+                            <ul class="cimgPC">
+                                <li><img src="images/c2_cur1_01.jpg"></li>
+                                <li><img src="images/c2_cur1_02.jpg"></li>
+                                <li><img src="images/c2_cur1_03.jpg"></li>
+                            </ul><!-- cimgPC -->
+                        </a></li>
+                        <li><a href="#">
+                            <img src="images/c2_cur2_m.jpg" class="cimgM">
+                            <ul class="cimgPC">
+                                <li><img src="images/c2_cur2_01.jpg"></li>
+                                <li><img src="images/c2_cur2_02.jpg"></li>
+                                <li><img src="images/c2_cur2_03.jpg"></li>
+                                <li><img src="images/c2_cur2_04.jpg"></li>
+                            </ul><!-- cimgPC -->
+                        </a></li>
+                        <li><a href="#">
+                            <img src="images/c2_cur3_m.jpg" class="cimgM">
+                            <ul class="cimgPC">
+                                <li><img src="images/c2_cur3_01.jpg"></li>
+                                <li><img src="images/c2_cur3_02.jpg"></li>
+                                <li><img src="images/c2_cur3_03.jpg"></li>
+                            </ul><!-- cimgPC -->
+                        </a></li>
+                    </ul><!-- curL -->
+                        <ul class="curR">
+                            <li class="on">
+                                <div class="curTxt">
+                                    <p class="mainTit">에몬스 패브릭 소파</p>
+                                    <p class="subTit">With Fabric</p>
+                                    <p class="cont">우리집 거실을 더욱 포근하게 만들어줄<br>
+                                    에몬스 패브릭 라인 소파로<br>
+                                    인테리어에 감성을 더해보세요!</p>
+                                </div><!-- curTxt -->
+                                <div class="moreBtn"><a href="#">more</a></div>
+                            </li>
+                            <li>
+                                <div class="curTxt">
+                                    <p class="mainTit">시원한 홈캉스 돌소파</p>
+                                    <p class="subTit">온열소파에 관한 모든 것</p>
+                                    <p class="cont">우리집 거실을 더욱 시원하게 만들어줄
+                                        돌소파로 시원한 홈캉스를 연출해보세요!</p>
+                                </div><!-- curTxt -->
+                                <div class="moreBtn"><a href="#">more</a></div>
+                            </li>
+                            <li>
+                                <div class="curTxt">
+                                    <p class="mainTit">신혼부부를 위한 <br>추천가구</p>
+                                    <p class="subTit">스타일별 신혼집 꾸미기</p>
+                                    <p class="cont">보기만 해도 마음이 정돈 되는 듯한
+                                        20평대 깔끔한 인테리어, 신혼집 꾸미기.</p>
+                                </div><!-- curTxt -->
+                                <div class="moreBtn"><a href="#">more</a></div>
+                            </li>
+                        </ul><!-- curR -->
+                    <!-- <ul class="curPager">
+                        <li class="on"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                    </ul> --><!-- curPager -->
+                    <!-- <p class="curBtn">
+                        <a href="#" class="cbtnL"><i class="fa-solid fa-angle-left ileft"></i></a>
+                        <a href="#" class="cbtnR"><i class="fa-solid fa-angle-right iright"></i></a>
+                    </p> --><!-- curBtn -->
+                </div><!-- curin -->
+            </div><!-- cur -->
+            <div class="promo">
+                <div class="promoin">
+                    <h2 class="titM">PROMOTION</h2>
+                    <div class="drama">
+                        <h3 class="titS">In Drama</h3>
+                        <ul class="dList">
+                            <li><a href="#"><img src="images/c3_drama1.jpg"></a></li>
+                            <li><a href="#"><img src="images/c3_drama2.jpg"></a></li>
+                            <li><a href="#"><img src="images/c3_drama3.jpg"></a></li>
+                            <li><a href="#"><img src="images/c3_drama4.jpg"></a></li>
+                            <li><a href="#"><img src="images/c3_drama5.jpg"></a></li>
+                            <li><a href="#"><img src="images/c3_drama6.jpg"></a></li>
+                            <li><a href="#"><img src="images/c3_drama7.jpg"></a></li>
+                            <li><a href="#"><img src="images/c3_drama8.jpg"></a></li>
+                            <li><a href="#"><img src="images/c3_drama9.jpg"></a></li>
+                            <li><a href="#"><img src="images/c3_drama10.jpg"></a></li>
+                            <li><a href="#"><img src="images/c3_drama11.jpg"></a></li>
+                            <li class="last"><a href="#"><img src="images/c3_drama12.jpg"><span><p>more+</p></span></a></li>
+                        </ul><!-- dList -->
+                        <!-- <div class="drmBtn">
+                            <a href="#" class="dbtnL"><i class="fa-solid fa-angle-left ileft"></i></a>
+                            <a href="#" class="dbtnR"><i class="fa-solid fa-angle-right iright"></i></a>
+                        </div> --><!-- drmBtn -->
+                    </div><!-- drama -->
+                    <div class="celeb clear">
+                        <h3 class="titS">Celebrity</h3>
+                        <div class="celebR">
+                            <div class="celeb1 on">
+                                <div class="celebM"><a href="#"><img src="images/c3_celeb1_m.jpg"></a></div>
+                                <div class="cVideo">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/E9JMjZknXEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div><!-- cVideo -->
+                            </div><!-- celeb1 -->
+                            <div class="celeb2">
+                                <div class="celebM"><a href="#"><img src="images/c3_celeb2_m.jpg"></a></div>
+                                <div class="cVideo">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/a-eDkxDCGFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div><!-- cVideo -->
+                            </div><!-- celeb2 -->
+                            <div class="celeb3">
+                                <div class="celebM"><a href="#"><img src="images/c3_celeb3_m.jpg"></a></div>
+                                <div class="cVideo">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3WB9--jjsZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div><!-- cVideo -->
+                            </div><!-- celeb3 -->
+                            <div class="celeb4">
+                                <div class="celebM"><a href="#"><img src="images/c3_celeb4_m.jpg"></a></div>
+                                <div class="cVideo">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9CRccnNdh1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div><!-- cVideo -->
+                            </div><!-- celeb4 -->
+                        </div><!-- celebR -->
+                        <ul class="celebL">
+                            <li class="on">
+                                <div class="cTxt">
+                                    <p class="mainTit">석정스포츠단 펜싱팀</p>
+                                    <p class="subTit">#펜싱 #석정마크써밋 #후원</p>
+                                    <p class="cont">국대 펜싱 레전드이자, 현재는 석정스포츠단<br>
+                                        펜싱팀 감독을 맡고 있는 남현희 님께 에몬스에서<br>
+                                        석정스포츠단 펜싱팀을 응원하는 마음을 담아<br>
+                                        선수단 아파트에 제품을 후원해드렸습니다.</p>
+                                </div><!-- cTxt -->
+                                <div class="moreBtn"><a href="#">more</a></div>
+                            </li>
+                            <li>
+                                <div class="cTxt">
+                                    <p class="mainTit">곽민정 X 문성곤</p>
+                                    <p class="subTit">#피겨스케이팅 #프로농구 #신혼가구</p>
+                                    <p class="cont">피겨 요정 곽민정 님과 농구 국가대표 문성곤 님의<br>
+                                        모던 웨딩 하우스 첫 공개! 탁 트인 자연의 품처럼<br>
+                                        편안한 백운밸리의 신혼 보금자리를 소개합니다.</p>
+                                </div><!-- cTxt -->
+                                <div class="moreBtn"><a href="#">more</a></div>
+                            </li>
+                            <li>
+                                <div class="cTxt">
+                                    <p class="mainTit">이동국</p>
+                                    <p class="subTit">#축구선수 #대박패밀리 #5남매</p>
+                                    <p class="cont">다둥이 아빠 축구선수 이동국 님의 새 보금자리,<br>
+                                        인천 송도! 아이들과 함께 꾸민 이동국 님의 행복한<br>
+                                        모던 하우스를 지금 첫 공개합니다!</p>
+                                </div><!-- cTxt -->
+                                <div class="moreBtn"><a href="#">more</a></div>
+                            </li>
+                            <li>
+                                <div class="cTxt">
+                                    <p class="mainTit">양정원</p>
+                                    <p class="subTit">#필라테스 #신박한정리 #건강한집</p>
+                                    <p class="cont">필라테스 여신 양정원 님의 건강한 우리집!<br>
+                                        에몬스 가구와 함께 새로운 공간으로 태어난<br>
+                                        양정원 님의 집을 소개합니다.</p>
+                                </div><!-- cTxt -->
+                                <div class="moreBtn"><a href="#">more</a></div>
+                            </li>
+                        </ul><!-- celebL -->
+                        <!-- <div class="clBtn">
+                            <a href="#" class="clbtnL"><i class="fa-solid fa-angle-left ileft"></i></a>
+                            <a href="#" class="clbtnR"><i class="fa-solid fa-angle-right iright"></i></a>
+                        </div> --><!-- drmBtn -->
+                       <!--  <ul class="clPager">
+                            <li class="on"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                        </ul> --><!-- clPager -->
+                    </div><!-- celeb -->
+                </div><!-- promoin -->
+            </div><!-- promo -->
+            <div class="review">
+                <h2 class="titM">REVIEW</h2>
+                <div class="tabM clear">
+                    <div class="on"><a href="#">Best</a></div>
+                    <div><a href="#">Excellent</a></div>
+                    <div><a href="#">All</a></div>
+                </div><!-- tabM -->
+                <ul class="rList">
+                    <li class="best">
+                        <ul class="rWrap">
+                            <li><a href="#">
+                                <div class="rImg"><img src="images/c4_best1.jpg"></div>
+                                <p class="rTit">안정감 있는 편안한 소르베 소파[4인]</p>
+                                <p class="rId">say******</p>
+                                <p class="rDate">2022&#45;01&#45;01</p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="rImg"><img src="images/c4_best2.jpg"></div>
+                                <p class="rTit">에몬스가구와 함께 제2의 신혼을 꿈꿔요</p>
+                                <p class="rId">sky******</p>
+                                <p class="rDate">2021&#45;12&#45;18</p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="rImg"><img src="images/c4_best3.jpg"></div>
+                                <p class="rTit">이래서 에몬스 에몬스 하나봐요!</p>
+                                <p class="rId">ejm******</p>
+                                <p class="rDate">2019&#45;12&#45;17</p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="rImg"><img src="images/c4_best4.jpg"></div>
+                                <p class="rTit">에몬스가구 추천해요~</p>
+                                <p class="rId">dyd******</p>
+                                <p class="rDate">2019&#45;11&#45;19</p>
+                            </a></li>
+                        </ul>
+                        <!-- <ul class="bPager">
+                            <li class="on"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                        </ul> --><!-- bPager -->
+                    </li><!-- best -->
+                    <li class="exc">
+                        <ul class="rWrap">
+                            <li><a href="#">
+                                <div class="rImg"><img src="images/c4_exc1.jpg"></div>
+                                <p class="rTit">에몬스 리클라이너 소파로 편안함과 모던함을 동시에!</p>
+                                <p class="rId">sin******</p>
+                                <p class=rDate>2020&#45;04&#45;13</p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="rImg"><img src="images/c4_exc2.jpg"></div>
+                                <p class="rTit">에몬스로 우리집 업그레이드~!!</p>
+                                <p class="rId">pin******</p>
+                                <p class=rDate>2019&#45;08&#45;15</p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="rImg"><img src="images/c4_exc3.jpg"></div>
+                                <p class="rTit">멋스러운 분위기와 즐거운 식사시간을 선물해준 '에몬스 미슐랭 화산석 식탁'</p>
+                                <p class="rId">sno******</p>
+                                <p class=rDate>2019&#45;06&#45;22</p>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="rImg"><img src="images/c4_exc4.jpg"></div>
+                                <p class="rTit">에몬스와의 첫 만남</p>
+                                <p class="rId">060******</p>
+                                <p class=rDate>2019&#45;06&#45;16</p>
+                            </a></li>
+                        </ul>
+                        <!-- <ul class="exPager">
+                            <li class="on"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                        </ul> --><!-- exPager -->
+                    </li><!-- exc -->
+                </ul><!-- rList -->
+            </div><!-- review -->
+            <div class="cs">
+                <div class="vr">
+                    <div class="vrin clear">
+                        <h2 class="titM">VR SHOWROOM</h2>
+                        <ul class="vrR">
+                            <li><img src="images/c5_vr1.png"></li>
+                            <li><img src="images/c5_vr2.png"></li>
+                            <li><img src="images/c5_vr3.png"></li>
+                        </ul><!-- vrR -->
+                        <div class="vrL">
+                            <div class="vrTxt">
+                                <p class="mainTit">Stay with EMONS</p>
+                                <p class="subTit">온라인으로 즐기는 가구 쇼핑!
+                                    <span>가상 현실로 보는 3D 체험</span></p>
+                                <p class="cont">매장에서 보는 듯 생생하게,<br>
+                                    700평 규모의 다양한 제품을 한눈에!<br>
+                                    VR 쇼룸 서비스를 통해 집에서 간편하게<br>
+                                    가구쇼핑을 즐겨보세요.</p>
+                            </div><!-- vrTxt -->
+                            <div class="goBtn"><a href="#">go now</a></div>
+                        </div><!-- vrL -->
+                        <!-- <div class="vrBtn">
+                            <a href="#" class="vrbtnL"><i class="fa-solid fa-angle-left ileft"></i></a>
+                            <a href="#" class="vrbtnR"><i class="fa-solid fa-angle-right iright"></i></a>
+                        </div> --><!-- vrBtn -->
+                    </div><!-- vrin -->
+                </div><!-- vr -->
+                <div class="etc">
+                    <div class="shop"><a href="#">
+                        <div class="sImg"><img src="images/c5_shop.jpg"></div>
+                        <div class="sTxt">
+                            <p class="sTit">대리점 개설 안내</p>
+                            <p class="bar"></p>
+                            <p class="sCont">에몬스와 함께 하는 성공전략</p>
+                        </div><!-- sTxt -->
+                    </a></div><!-- shop -->
+                    <div class="service"><a href="#">
+                        <div class="sImg"><img src="images/c5_service.jpg"></div>
+                        <div class="sTxt">
+                            <p class="sTit">고정 시공 서비스</p>
+                            <p class="bar"></p>
+                            <p class="sCont">고정 시공 서비스로 더 안전한 공간을 완성하세요</p>
+                        </div><!-- sTxt -->
+                    </a></div><!-- service -->
+                </div><!-- etc -->
+            </div><!-- cs -->
+        </section><!-- container -->
+        <footer id="footer">
+            <div class="footerin clear">
+                <h2 class="flogo"><img src="images/f_logo.png"></h2>
+                <ul class="fmenu clear">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">제휴 및 제안</a></li>
+                    <li><a href="#">설문참여</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul><!-- fmenu -->
+                <div class="finfo">
+                    <h4>회사소개</h4>
+                    <p>
+                        대표자 : 김경수 | <br class="fb1">
+                        사업자 등록번호 : 139-81-32740 <a href="#" class="bsinfo">사업자정보확인 &#62;</a><span class="fline"> | </span><br class="fb2"> 
+                        e-mail : webmaster@emons.co.kr | <span class="csNum">고객센터 1800-9977 |
+                        </span><br class="fb3">
+                        주소 : (21689) 인천광역시 남동구 논현고잔로 47 (고잔동 740-3) |<br class="fb4">
+                        <span class="shopNum">수신자 부담전화 : 대리점 가구전용 080-272-2233, 인터넷 가구전용 080-800-8011 | <br class="fb5">
+                        인천 본사전시장 : 032-811-0111 | 대리점 개설문의: 032-250-0125</span>
+                    </p>
+                </div><!-- finfo -->
+                <div class="fcs clear">
+                    <h4>고객센터</h4>
+                    <div class="fcsL">
+                        <p class="num">1800-9977</p>
+                        <p class="ars">(ARS 2번 : 에몬스홈 고객센터)</p>
+                    </div><!-- csL -->
+                    <div class="fcsR">
+                        <p class="p1">평일 : 오전 08:30 ~ 오후 17:30<br>
+                            점심시간 : 오후 12:00 ~ 오후 13:00<br>
+                            업무휴무 : 토,일,공휴일 휴무</p>
+                        <p class="p2">전국 어디서나 서비스 접수, 상담 및 기타 문의사항이 있으시면 연락주세요</p>
+                    </div><!-- fcsR -->
+                </div><!-- fcs -->
+                <p class="copy">COPYRIGHT ⓒ EMONS FURNITURE CO., LTD. ALL RIGHTS RESERVED</p>
+                <ul class="fmark">
+                    <li><img src="images/f_mark1_s.png"></li>
+                    <li><img src="images/f_mark2_s.png"></li>
+                    <li><img src="images/f_mark3_s.png"></li>
+                    <li><img src="images/f_mark4_s.png"></li>
+                    <li><img src="images/f_mark5_s.png"></li>
+                    <li><img src="images/f_mark6_s.png"></li>
+                    <li><img src="images/f_mark7_s.png"></li>
+                    <li><img src="images/f_mark8_s.png"></li>
+                </ul><!-- fmark -->
+                <ul class="fsns">
+                    <li><a href="#"><img src="images/f_sns_b1.png"></a></li>
+                    <li><a href="#"><img src="images/f_sns_b2.png"></a></li>
+                    <li><a href="#"><img src="images/f_sns_b3.png"></a></li>
+                    <li><a href="#"><img src="images/f_sns_b4.png"></a></li>
+                    <li><a href="#"><img src="images/f_sns_b5.png"></a></li>
+                </ul><!-- fsns -->
+            </div><!-- footerin -->
+        </footer><!-- footer -->
+        <div class="goTop"><a href="#"><img src="images/btn_gotop.png"></a></div>
+    </div><!-- wrap -->
+</body>
+</html>

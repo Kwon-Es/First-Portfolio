@@ -1,0 +1,42 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@font-face{
+    font-family: 'MinSans-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'MinSans-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'MinSans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{margin:0; padding:0;}
+body{
+    font-family: 'MinSans-Regular';
+    line-height: 1em;
+}
+
+body::-webkit-scrollbar{width: 14px;}  
+body::-webkit-scrollbar-thumb{
+    background-color: #14008c; height: 12%;
+    border-radius: 7px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+/* body::-webkit-scrollbar-track{background-color: #e8e8e8;} */
+/*
+::-webkit-scrollbar : 스크롤바 전체
+::-webkit-scrollbar-thumb : 스크롤 막대
+::-webkit-scrollbar-track : 여백
+*/
+ul{list-style:none;}
+a{text-decoration:none; color:inherit;}
+img{vertical-align:top;}
+.clear::after{display:block; content:''; clear:both;}

@@ -1,0 +1,7 @@
+$(function(){ //opening
+
+
+    
+
+
+}); //end

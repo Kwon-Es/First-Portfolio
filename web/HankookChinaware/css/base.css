@@ -1,0 +1,17 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif;*/
+
+* {margin: 0; padding: 0;}
+
+body{
+    font-family: 'NanumSquare';
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar{display: none;}
+/* 스크롤바 숨기기 */
+
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{vertical-align: top;}
+.clear::after {display: block; content: ''; clear: both;}
