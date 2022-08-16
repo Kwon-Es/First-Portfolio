@@ -46,9 +46,9 @@
 .mBg{width: calc((100% - 1200px)/2 + 282px); height: 100vh; background-color: #013220;}
 .mainin{
     width: 1200px; height: 100vh; position: absolute;
-    top:0; left:50%; transform: translateX(-50%);
+    top:0; left:50%; transform: translateX(-50%); overflow: hidden;
 }
-.double{position: absolute; bottom: 0; left: 0;}
+.double{position: absolute; bottom:-837px; left: 0;}
 .mvTxt{
     position: absolute; top:calc(50% - 100px); right:0;
     transform: translateY(calc(-50% + 100px));
@@ -57,13 +57,13 @@
 .mvTxt h2{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 70px; font-weight: 700; line-height: 70px;
-    padding: 0 0 0;
+    padding: 0 0 0; display: none;
 }
 .bar{
-    margin: 45px 0; width: 78px; height: 10px;
+    margin: 45px 0; width: 78px; height: 0px;
     background-color: #000; display: inline-block;
 }
-.mainWords{font-size: 20px; line-height: 26px;}
+.mainWords{font-size: 20px; line-height: 26px; margin-right: -311.2px;}
 .name{
     line-height: 20px; font-weight: bold;
     display: inline-block; margin-bottom: 16px;

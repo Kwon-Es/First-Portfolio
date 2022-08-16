@@ -76,7 +76,18 @@ $(function(){ //opening
 
     //2.Mainvisual
     //load 했을 때, .double, mvTxt 가로방향으로 스르륵 나타나기
-
+    $(window).on('load', function(){
+        $('.double').stop().animate({
+            bottom:0
+        }, 700)
+        $('.mvTxt h2').fadeIn(1000);
+        $('.mvTxt .bar').stop().animate({
+            height:10
+        },500);
+        $('.mainWords').stop().animate({
+            marginRight:0
+        }, 700)
+    });
     
     //3.About
     //l5 icon 클릭 시
