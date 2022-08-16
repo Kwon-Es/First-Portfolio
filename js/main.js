@@ -39,22 +39,22 @@ $(function(){ //opening
 
     $(n1).on('click', function(){
         $('html,body').animate({
-            scrollTop:`${t1}`
+            scrollTop:`${t1 - 50}`
         })
     });
     $(n2).on('click', function(){
         $('html,body').animate({
-            scrollTop:`${t2}`
+            scrollTop:`${t2 - 50}`
         })
     });
     $(n3).on('click', function(){
         $('html,body').animate({
-            scrollTop:`${t3}`
+            scrollTop:`${t3 - 50}`
         })
     });
     $(n4).on('click', function(){
         $('html,body').animate({
-            scrollTop:`${t4}`
+            scrollTop:`${t4 - 50}`
         })
     });
     $(n5).on('click', function(){
@@ -62,7 +62,17 @@ $(function(){ //opening
             scrollTop:$(document).height()
         });
     })
+
+/*     $('.gnb li').on('click', function(){
+        let n = $(this).index();
+
+        $('html,body').animate({
+            scrollTop: window['t'+(n+1)]
+        });
+    })
+ */
     
+   
 
     //2.Mainvisual
     //load 했을 때, .double, mvTxt 가로방향으로 스르륵 나타나기
@@ -82,10 +92,59 @@ $(function(){ //opening
 
 
     //4.Container
-    //display와 text영역 스스륵 나타나기
+    //특정 위치에 스크롤 됐을 때, text영역 나타나기
+    
+
+    $(window).on('scroll', function(){
+        let scr = $(this).scrollTop();
+        console.log(scr)
+
+        if(scr >= 1200 && scr < 2000){
+            $('.resp1 .right').stop().animate({
+                marginRight: 0
+            }, 400)
+        } else if(scr >= 2000 && scr < 2800){
+            $('.resp2 .left').stop().animate({
+                marginLeft: 0
+            }, 400)
+        } else if(scr >= 2800 && scr < 3600){
+            $('.stan1 .right').stop().animate({
+                marginRight: 0
+            }, 400)
+        } else if(scr >= 3600 && scr < 4400){
+            $('.stan2 .left').stop().animate({
+                marginLeft: 0
+            }, 400)
+        } else if(scr >= 4400){
+            $('.mob .right').stop().animate({
+                marginRight: 0
+            }, 400)
+        } else{ $('.right').stop().animate({
+            marginRight: -282
+        }, 'fast').parents('#container').find('.left').stop().animate({
+            marginLeft: -282
+        });
+        };
+
+    });
 
 
-    //5.Winddow
+    //5.Window
+     //5-1.스크롤 시, 100vh 씩 이동
+  /*    $('section').on('mousewheel', function(e, d){
+         if(d > 0){
+             let prv = $(this).prev().offset().top;
+             $('html, body').stop().animate({
+                 scrollTop:prv
+             });
+         } else if(d < 0){
+             let nxt = $(this).next().offset().top;
+             $('html, body').stop().animate({
+                 scrollTop:nxt
+             })
+         }
+    }); */
+       
     //새로고침 시, 최상단으로 이동
     function top(){
         $('html, body').animate({

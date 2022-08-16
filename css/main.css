@@ -123,7 +123,7 @@ section h2{
     display: none;
 }
 /***** About 끝 *****/
-#container{width: 1200px; margin: 0 auto;}
+#container{width: 1200px; margin: 0 auto; overflow: hidden;}
 .display{display: flex; flex-flow: row wrap; justify-content: space-between;}
 #container>div{width: 100%;}
 .more{position: absolute;}
@@ -133,7 +133,8 @@ section h2{
 }
 .moreBtn{font-size: 17px; line-height: 17px;}
 .cTxt{width: 282px;}
-.right{text-align: right;}
+.right{text-align: right; margin-right: -282px;}
+.left{margin-left: -282px;}
 .cLogo{width: 180px; height: auto; display: inline-block;}
 .cTxt .slogan{
     font-family: 'Noto Sans KR', sans-serif;
