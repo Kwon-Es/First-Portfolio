@@ -15,7 +15,7 @@ $(function(){ //opening
     });
 
     //1-2. 스크롤 발생 시 동작
-    //버튼을 먼저 클릭하고 스크롤 발생시 openM 버튼 남는 현상
+    //★★★버튼을 먼저 클릭하고 스크롤 발생시 openM 버튼 남는 현상
     $(window).on('scroll', function(){
         let scr = $(this).scrollTop();
         if(scr > 0){
@@ -26,6 +26,7 @@ $(function(){ //opening
     });
 
     //1-3.gnb 클릭시 scroll위치 변경
+    //★★변수+변수 호출
     let n1 = $('.gnb li:nth-child(1)')
     let n2 = $('.gnb li:nth-child(2)')
     let n3 = $('.gnb li:nth-child(3)')
@@ -72,7 +73,6 @@ $(function(){ //opening
     })
  */
     
-   
 
     //2.Mainvisual
     //load 했을 때, .double, mvTxt 가로방향으로 스르륵 나타나기
@@ -89,23 +89,64 @@ $(function(){ //opening
         }, 700)
     });
     
+
     //3.About
-    //l5 icon 클릭 시
-    //클릭한 icon 순서에 맞는 sTxt 텍스트가 나타나기
-    $('.s1 .icon li').on('click', function(){
+    //3-1.스크롤 되면 clickS 스르륵 나타나기
+    $(window).on('scroll',function(){
+        let scr = $('html, body').scrollTop();
+
+        if( scr > 840 && scr < 1500 ){
+            $('.clickS').addClass('on')
+        } else{
+            $('.clickS').removeClass('on')
+        };
+    });
+
+    //3-2.l5 icon li 클릭 시
+    //클릭한 li opacity, 클릭한 li 순서에 맞는 sTxt 텍스트 나타나기
+    //다시 클릭 시, opacity, sTxt 텍스트 숨기기
+    //★★★두 번 클릭해야 다음 동작 실행
+    let s1 = $('.s1 .icon li')
+    let s2 = $('.s2 .icon li')
+    let st1 = $('.st1 li')
+    let st2 = $('.st2 li')
+    let onOff = true;
+
+    $(s1).on('click', function(){
         let gi = $(this).index();
-        $('.st1 li').eq(gi).show().siblings().hide().parent().siblings().find('li').hide();
+        onOff = !onOff;
+
+        if(onOff == false){
+            $(this).addClass('on').siblings().removeClass('on');
+            $(s2).removeClass('on');
+            $(st1).eq(gi).show().siblings().hide();
+            $(st2).hide();
+        } else {
+            $(this).removeClass('on');
+            $(st1).eq(gi).hide();
+        }
     });
-    $('.s2 .icon li').on('click', function(){
+
+    $(s2).on('click', function(){
         let ei = $(this).index();
-        $('.st2 li').eq(ei).show().siblings().hide().parent().siblings().find('li').hide();
+        onOff = !onOff;
+
+        if(onOff == false){
+            $(this).addClass('on').siblings().removeClass('on');
+            $(s1).removeClass('on');
+            $(st2).eq(ei).show().siblings().hide();
+            $(st1).hide();
+        } else {
+            $(this).removeClass('on');
+            $(st2).eq(ei).hide();
+        }
     });
+
 
 
     //4.Container
     //특정 위치에 스크롤 됐을 때, text영역 나타나기
-    
-
+    //★해당 위치를 벗어났을 때, text 영역 사라지기
     $(window).on('scroll', function(){
         let scr = $(this).scrollTop();
         console.log(scr)
@@ -113,23 +154,23 @@ $(function(){ //opening
         if(scr >= 1200 && scr < 2000){
             $('.resp1 .right').stop().animate({
                 marginRight: 0
-            }, 400)
+            }, 300)
         } else if(scr >= 2000 && scr < 2800){
             $('.resp2 .left').stop().animate({
                 marginLeft: 0
-            }, 400)
+            }, 300)
         } else if(scr >= 2800 && scr < 3600){
             $('.stan1 .right').stop().animate({
                 marginRight: 0
-            }, 400)
+            }, 300)
         } else if(scr >= 3600 && scr < 4400){
             $('.stan2 .left').stop().animate({
                 marginLeft: 0
-            }, 400)
-        } else if(scr >= 4400){
+            }, 300)
+        } else if(scr >= 4400 && scr < 5390){
             $('.mob .right').stop().animate({
                 marginRight: 0
-            }, 400)
+            }, 300)
         } else{ $('.right').stop().animate({
             marginRight: -282
         }, 'fast').parents('#container').find('.left').stop().animate({
@@ -141,7 +182,7 @@ $(function(){ //opening
 
 
     //5.Window
-     //5-1.스크롤 시, 100vh 씩 이동
+    //5-1.스크롤 시, 100vh 씩 이동
   /*    $('section').on('mousewheel', function(e, d){
          if(d > 0){
              let prv = $(this).prev().offset().top;
@@ -184,6 +225,7 @@ $(function(){ //opening
     //7-1.일정값 이상 스크롤했을 때 go버튼 나타나기
     $(window).on('scroll',function(){
         let scr = $('html, body').scrollTop();
+
         if( scr > 500 ){
             $('.go').addClass('on')
         } else{

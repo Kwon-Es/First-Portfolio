@@ -86,7 +86,7 @@ section h2{
     font-weight: 700; font-size: 17px; line-height: 22px;
 }
 /* 일괄적용 */
-.aboutin{width: 1200px; margin: 0 auto;}
+.aboutin{width: 1200px; height: 100vh; margin: 0 auto;}
 .aboutTop{
     width: 100%;
     display: flex; flex-flow: row wrap; justify-content: space-between;
@@ -113,14 +113,34 @@ section h2{
     display: flex; flex-flow: row wrap; justify-content: space-between;
 }
 .icon li:hover{opacity: 0.7;}
-.s1{margin-bottom: 40px;}
+.s1{margin-bottom: 50px;}
 .s2 .icon{justify-content: left;}
 .s2 .icon li{margin-right: 40px;}
+.icon li.on{opacity: 0.7;}
 .s2 .icon li:last-child{margin-right: 0;}
 .sTxt ul li{
     position: absolute; bottom:0; right: 0;
     width: 306px; font-size: 16px; line-height: 22px;
     display: none;
+}
+.clickS{
+    opacity: 0; transition: 1s;
+    position: absolute; top:5px; left:100px;
+    animation:click 0.8s infinite linear normal;
+}
+.clickS.on{opacity: 1;}
+@keyframes click{
+    0%{top:2px;}
+    50%{top:5px;}
+    100%{top:8px;}
+}
+.clickS p{
+    font-family: "PressStart2P"; font-size: 11px;
+    /* text-shadow: -1px 0px #fff, 0px 1px #fff, 1px 0px #fff, 0px -1px #fff; */
+}
+.hereS{
+    font-size: 18px; margin: 6px 0 0 20px; color:#fff;
+    text-shadow: -1px 0px #000, 0px 1px #000, 1px 0px #000, 0px -1px #000;
 }
 /***** About 끝 *****/
 #container{width: 1200px; margin: 0 auto; overflow: hidden;}
