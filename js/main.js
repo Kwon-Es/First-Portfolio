@@ -24,8 +24,8 @@ $(function(){ //opening
             $('#header, .gnb, .black, .openM, .closeM').removeClass('on');
         };
     });
-
-    //1-3.gnb 클릭시 scroll위치 변경
+    
+    //1-3.gnb li 클릭시 scroll위치 변경, color 변경
     //★★변수+변수 호출
     let n1 = $('.gnb li:nth-child(1)')
     let n2 = $('.gnb li:nth-child(2)')
@@ -39,26 +39,31 @@ $(function(){ //opening
     let t4 = $('.cont3').offset().top;
 
     $(n1).on('click', function(){
+        $(this).addClass('on').siblings().removeClass();
         $('html,body').animate({
             scrollTop:`${t1 - 50}`
-        })
+        });
     });
     $(n2).on('click', function(){
+        $(this).addClass('on').siblings().removeClass();
         $('html,body').animate({
             scrollTop:`${t2 - 50}`
         })
     });
     $(n3).on('click', function(){
+        $(this).addClass('on').siblings().removeClass();
         $('html,body').animate({
             scrollTop:`${t3 - 50}`
         })
     });
     $(n4).on('click', function(){
+        $(this).addClass('on').siblings().removeClass();
         $('html,body').animate({
             scrollTop:`${t4 - 50}`
         })
     });
     $(n5).on('click', function(){
+        $(this).addClass('on').siblings().removeClass();
         $('html,body').animate({
             scrollTop:$(document).height()
         });
@@ -72,10 +77,26 @@ $(function(){ //opening
         });
     })
  */
-    
 
+    //1-4.스크롤 최상단일 때, 메인메뉴 color 변경
+    $(window).on('scroll', function(){
+        let scr = $('html, body').scrollTop();
+        
+        if(scr == 0){
+            $('.gnb li').removeClass('on');
+        };
+    });
+
+    
+    //1-5.로고 클릭 시, 새로고침 되기
+    $('.logo').on('click', function(e){
+        e.preventDefault();
+        location.reload();
+    });
+
+    
     //2.Mainvisual
-    //load 했을 때, .double, mvTxt 가로방향으로 스르륵 나타나기
+    //load 했을 때, .double, mvTxt 스르륵 나타나기
     $(window).on('load', function(){
         $('.double').stop().animate({
             bottom:0
@@ -91,11 +112,11 @@ $(function(){ //opening
     
 
     //3.About
-    //3-1.스크롤 되면 clickS 스르륵 나타나기
+    //3-1.스크롤 되면 clickS,  스르륵 나타나기
     $(window).on('scroll',function(){
         let scr = $('html, body').scrollTop();
 
-        if( scr > 840 && scr < 1500 ){
+        if( scr > 700 && scr < 1500 ){
             $('.clickS').addClass('on')
         } else{
             $('.clickS').removeClass('on')
@@ -105,7 +126,7 @@ $(function(){ //opening
     //3-2.l5 icon li 클릭 시
     //클릭한 li opacity, 클릭한 li 순서에 맞는 sTxt 텍스트 나타나기
     //다시 클릭 시, opacity, sTxt 텍스트 숨기기
-    //★★★두 번 클릭해야 다음 동작 실행
+    //★★★두 번 클릭해야 다음 동작 실행됨
     let s1 = $('.s1 .icon li')
     let s2 = $('.s2 .icon li')
     let st1 = $('.st1 li')
@@ -145,7 +166,7 @@ $(function(){ //opening
 
 
     //4.Container
-    //특정 위치에 스크롤 됐을 때, text영역 나타나기
+    //4-1.특정 위치에 스크롤 됐을 때, text영역 나타나기
     //★해당 위치를 벗어났을 때, text 영역 사라지기
     $(window).on('scroll', function(){
         let scr = $(this).scrollTop();
