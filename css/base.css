@@ -10,17 +10,16 @@
 
 body{
     font-family: 'NanumSquare';
-    /* overflow-x: hidden; overflow-y:auto; */ /* 가로스크롤방지 */
-    /* -ms-overflow-style: none; */
+    -ms-overflow-style: none; /* 스크롤바 숨기기 */
 }
-/* ::-webkit-scrollbar{display: none;} */ /* 스크롤바 숨기기 */
+::-webkit-scrollbar{display: none;} /* 스크롤바 숨기기 */
 
-body::-webkit-scrollbar{width: 20px;}  
+/* body::-webkit-scrollbar{width: 20px;}  
 body::-webkit-scrollbar-thumb{
     background-color: #000; height:18%;
     background-clip: padding-box;
     border: 2.5px solid transparent;
-}
+} */ /* 스크롤바 스타일 변경 */
 
 /* 초기화 */
 ul{list-style: none;}

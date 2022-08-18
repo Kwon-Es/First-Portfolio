@@ -95,6 +95,7 @@ $(function(){ //opening
     //5. Window
     //5-1.스크롤 시, 100vh 씩 이동
     $('section').on('mousewheel', function(e, d){
+        e.preventDefault();
          if(d > 0){
              let prv = $(this).prev().offset().top;
              $('html, body').stop().animate({

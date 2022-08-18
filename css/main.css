@@ -1,4 +1,4 @@
-#wrap{width: 100%; min-width:1200px;}
+#wrap{width: 100%; min-width:1200px50d;}
 #header{
     width: 100%; height: 100px;
      background-color:transparent;
@@ -22,7 +22,7 @@
 .black.on{display: block;}
 .gnb{
     width: 690px; position: absolute;
-    top: 50%; left:408px; transform: translateY(-50%);
+    top: 50%; right:0; transform: translateY(-50%);
     display: none; flex-flow: row wrap; justify-content: space-between;
 }
 .gnb.on{display: flex;}
@@ -42,7 +42,7 @@
 .mBtn.closeM{font-size: 26px; display: none;}
 .mBtn.closeM.on{display: block;}
 /***** Header 끝 *****/
-#mainVisual{width: 100%; height: 100vh; position: relative;}
+#mainVisual{width: 100%; position: relative;}
 .mBg{width: calc((100% - 1200px)/2 + 282px); height: 100vh; background-color: #013220;}
 .mainin{
     width: 1200px; height: 100vh; position: absolute;
@@ -69,11 +69,13 @@
     display: inline-block; margin-bottom: 16px;
 }
 /***** Mainvisual 끝 *****/
-#about{width: 100%; height: 100vh; background-color: #eee;}
+#about{width: 100%; background-color: #eee;}
+section{height: 100vh;}
 section h2{
+    width: 100%;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700; font-size:40px; line-height: 40px;
-    padding:100px 0 90px; text-align: center;
+    padding:150px 0 90px; text-align: center;
 }
 #about h4{
     font-family: 'Noto Sans KR', sans-serif;
@@ -142,9 +144,10 @@ section h2{
     text-shadow: -1px 0px #000, 0px 1px #000, 1px 0px #000, 0px -1px #000;
 }
 /***** About 끝 *****/
-#container{width: 1200px; margin: 0 auto; overflow: hidden;}
-.display{display: flex; flex-flow: row wrap; justify-content: space-between;}
-#container>div{width: 100%;}
+.display{
+    width: 1200px; margin: 0 auto; overflow: hidden;
+    display: flex; flex-flow: row wrap; justify-content: space-between;
+}
 .more{position: absolute;}
 .more p{
     font-family: 'Noto Sans KR', sans-serif; display: inline;
@@ -152,8 +155,10 @@ section h2{
 }
 .moreBtn{font-size: 17px; line-height: 17px;}
 .cTxt{width: 282px;}
-.right{text-align: right; margin-right: -282px;}
-.left{margin-left: -282px;}
+.right{text-align: right; margin-right: -282px; transition: 0.3s;}
+.right.on{margin-right: 0;}
+.left{margin-left: -282px; transition: 0.3s;}
+.left.on{margin-left: 0;}
 .cLogo{width: 180px; height: auto; display: inline-block;}
 .cTxt .slogan{
     font-family: 'Noto Sans KR', sans-serif;
@@ -180,7 +185,7 @@ h5{
     font-size: 11px; line-height: 20px; text-align: center;
 }
 /* 일괄적용 */
-.resp1{margin-bottom: 150px;}
+/* .resp1{margin-bottom: 150px;} */
 .rImg{position: relative; width: 840px; height: 558px;}
 .rImg1{margin-left: -10px;}
 .iPhone{position: absolute; top: 195px; z-index: 200; overflow: hidden;}
@@ -218,13 +223,43 @@ h5{
     50%{transform: translateX(0px);}
     100%{transform: translateX(-4px);}
 }
-.hoverS{position: absolute; right: 0;}
+.hoverS{
+    position: absolute; top:300px; right: 120px; z-index: 250;
+    animation:hover 1.5s infinite linear normal;
+}
+@keyframes hover{
+    0%{top:360px; right: 95px;}
+    50%{top:300px; right: 120px;}
+    100%{top:360px; right: 95px;}
+}
 .cursor{
-    font-size: 18px; margin:0 0 10px 15px; color:#fff;
-    text-shadow: -1px 0px #000, 0px 1px #000, 1px 0px #000, 0px -1px #000;}
+    font-size: 18px; margin:0 0 10px 49px; color:#fff;
+    text-shadow: -1px 0px #000, 0px 1px #000, 1px 0px #000, 0px -1px #000;
+}
 .hoverS p{
     font-family: "PressStart2P"; font-size: 11px;
+    text-shadow: -1px 0px #fff, 0px 1px #fff, 1px 0px #fff, 0px -1px #fff;
 }
+/* .point{
+    width: 50px; height:50px; z-index: 250;
+    transform: rotate(-45deg);
+    position: absolute; top:280px; right:190px;
+    display: none;
+}
+.point.on{display: block;}
+.point p{position: absolute; height: 2px; background-color: #fff;}
+.p1{
+    width: 10px; transform: rotate(45deg);
+    top:0; left:0;
+}
+.p2{
+    width: 18px; transform:rotate(90deg);
+    top:-5px; left:10px;
+}
+.p3{
+    width: 10px; transform: rotate(-45deg);
+    top:0; left:30px;
+} */
 .resp1 .cBox{position: absolute; right: 0;}
 .resp1 .b1{background-color: #14008C; color: #fff;}
 .resp1 .b2{
@@ -232,8 +267,8 @@ h5{
     border: 1px solid #000;
 }
 .resp1 .b3{background-color: #E8E8E8;}
-/* cont1 - responsive01 끝 */
-.resp2{flex-flow: row-reverse wrap; margin-bottom: 100px;}
+/* cont1 */
+.resp2{flex-flow: row-reverse wrap; padding-top:240px;}
 .rImg2{margin-right: -37px; height: 554px;}
 .rImg2 .iPhone .screen{
     background-image: url(../images/c2_resp_s2_m.jpg);
@@ -266,8 +301,7 @@ h5{
     border: 1px solid #000;
 }
 .resp2 .b3{background-color: #F3F3F3;}
-/* cont1 - responsive02 끝 */
-.stan1{margin-bottom: 150px;}
+/* cont2 끝 */
 .sImg{position: relative;}
 .sImg1{height: 569px;}
 .iMac{position: relative;}
@@ -285,8 +319,8 @@ h5{
 .stan1 .cTxt .color .cBox{width:166px; position: absolute; right: 0;}
 .stan1 .b1{background-color: #6ACAAE; color: #fff;}
 .stan1 .b2{background-color: #173655; color: #fff;}
-/* cont2 - standard01 끝 */
-.stan2{flex-flow: row-reverse wrap; margin-bottom: 100px;}
+/* cont3 끝 */
+.stan2{flex-flow: row-reverse wrap; padding-top:240px;}
 .sImg2{height: 560px;}
 .sImg2 .iMac .screen{background-image: url(../images/c2_stan_s2.jpg);}
 .sImg2 .iMac .screen:hover{background-position: 0 -690px;}
@@ -300,7 +334,7 @@ h5{
     border: 1px solid #000;
 }
 .stan2 .cTxt .color .cBox{width:166px;}
-/* cont2 - standard02 끝 */
+/* cont4 끝 */
 .mob{margin-bottom: 150px;}
 .cImg{position: relative; width: 700px; height: 560px; margin-left: -10px;}
 
@@ -328,10 +362,9 @@ h5{
     background-color: #FFFFFF; box-sizing: border-box;
     border: 1px solid #000;
 }
-/* cont3 - mobile 끝 */
-/***** Container 끝 *****/
-#footer{
-    width: 100%; display: flex; flex-flow: row wrap;}
+/***** Cont 영역 끝 *****/
+section#footer{
+    width: 100%; height: 315px; display: flex; flex-flow: row wrap;}
 .sideBg{
     width: calc((100% - 1200px)/2); height: 315px;
     background-color: #013220;
