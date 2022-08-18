@@ -5,7 +5,7 @@ $(function(){ //opening
     //#header bg-color 변경, border-btm, gnb, black 나타나기
     //openM 숨기고 closeM 나타나기, gnb right 변경
     //closeM 클릭 시 removeClass, gnb right 변경
-    //★★★★★버튼을 먼저 클릭하고 스크롤 발생시 openM 버튼 남는 현상
+    //★★★★★버튼을 먼저 클릭하고 스크롤 발생 시 openM 버튼 남는 현상
     $('.openM').on('click', function(){
         $(this).addClass('on');
         $('#header, .gnb, .black, .closeM').addClass('on');
@@ -22,6 +22,28 @@ $(function(){ //opening
         });
     });
 
+    /* $('.openM').on('click', function(){
+        let scr = $('html, body').scrollTop();
+
+        if(scr == 0){
+            $(this).addClass('on');
+            $('#header, .gnb, .black, .closeM').addClass('on');
+            $('.gnb').animate({
+                right:102
+            });
+        } else{
+            $('.closeM').removeClass('on')
+        }
+    });
+    
+    $('.closeM').on('click', function(){
+        $(this).removeClass('on')
+        $('#header, .gnb, .black, .openM').removeClass('on');
+        $('.gnb').animate({
+            right:0
+        });
+    });
+ */
     //1-2. 스크롤 발생 시 동작
     //메뉴영역 나타나고 사라지기
     $(window).on('scroll', function(){
@@ -132,8 +154,32 @@ $(function(){ //opening
     //3-2.l5 icon li 클릭 시
     //클릭한 li opacity, 클릭한 li 순서에 맞는 sTxt 텍스트 나타나기
     //다시 클릭 시, opacity, sTxt 텍스트 숨기기
-    //★★★★★두 번 클릭해야 다음 동작 실행됨
     let s1 = $('.s1 .icon li')
+    let s2 = $('.s2 .icon li')
+    let st1 = $('.st1 li')
+    let st2 = $('.st2 li')
+    let onOff = true;
+
+    $(s1).on('click', function(){
+        let gi = $(this).index();
+
+            $(this).toggleClass('on').siblings().removeClass('on');
+            $(s2).removeClass('on');
+            $(st1).eq(gi).toggle().siblings().hide();
+            $(st2).hide();
+    });
+
+    $(s2).on('click', function(){
+        let ei = $(this).index();
+
+            $(this).toggleClass('on').siblings().removeClass('on');
+            $(s1).removeClass('on');
+            $(st2).eq(ei).toggle().siblings().hide();
+            $(st1).hide();
+    });
+
+
+    /* let s1 = $('.s1 .icon li')
     let s2 = $('.s2 .icon li')
     let st1 = $('.st1 li')
     let st2 = $('.st2 li')
@@ -167,7 +213,7 @@ $(function(){ //opening
             $(this).removeClass('on');
             $(st2).eq(ei).hide();
         }
-    });
+    }); */
 
 
 
