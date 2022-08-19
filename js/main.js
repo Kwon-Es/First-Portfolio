@@ -2,12 +2,7 @@ $(function(){ //opening
     
     
     //1.Modal
-    //5-1.로드했을 때, modal 창 스르륵 나타나기
-    /* $(widow).on('load', function(){
-        $('.modal').fadeIn(300)
-    }) */
-
-    //5-2.확인 버튼 클릭 시, modal 창 스르륵 사라지기
+    //5.확인 버튼 클릭 시, modal 창 스르륵 사라지기
     //eXmodal 체크 후, 버튼 클릭 시, modal 창 뜨지 않게 하기
     //★★★★★모달창 잔상
     if($.cookie('modal') == 'none'){
@@ -127,7 +122,6 @@ $(function(){ //opening
         };
     });
 
-    
     //2-5.로고 클릭 시, 새로고침 되기
     $('.logo').on('click', function(e){
         e.preventDefault();

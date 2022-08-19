@@ -53,25 +53,25 @@ img{vertical-align: top;}
     background-color: #E6000F;
 }
 .stan1 p::selection{
-    background-color: #6ACAAE;
+    background-color: #000;
     color:#fff;
 }
 .stan1 h5::selection{
-    background-color: #6ACAAE;
+    background-color:#000;
     color:#fff;
 }
 .stan1 br::selection{
-    background-color: #6ACAAE;
+    background-color: #000;
 }
 .stan2 p::selection{
-    background-color: #000;
+    background-color: #6ACAAE;
     color:#fff;
 }
 .stan2 br::selection{
-    background-color: #000;
+    background-color: #6ACAAE;
 }
 .stan2 h5::selection{
-    background-color: #000;
+    background-color: #6ACAAE;
     color:#fff;
 }
 .mob p::selection{

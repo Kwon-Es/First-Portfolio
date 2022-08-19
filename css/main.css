@@ -289,25 +289,28 @@ h5{
 .iMac{position: relative;}
 .iMac .screen{
     width: 540px; height: 323px;
-    background:url(../images/c2_stan_s1.jpg) no-repeat 0 0 / 540px auto;
+    background:url(../images/c2_stan_s2.jpg) no-repeat 0 0 / 540px auto;
     position:absolute; top:23px; left:24px;
     transition: 2s ease;
 }
 .sImg1 .iMac .screen:hover{background-position: 0 -532px;}
 .sImg1 .more{bottom: -3px;}
-.sImg1 .more:hover{color:#6ACAAE;}
+.sImg1 .more:hover{color:#444;}
 .sImg1 .more p{margin-right: 8px;}
 .sImg1 .more .moreBtn{animation:btn 1s infinite linear normal;}
 .stan1 .cTxt .color .cBox{width:166px; position: absolute; right: 0;}
-.stan1 .b1{background-color: #6ACAAE; color: #fff;}
-.stan1 .b2{background-color: #173655; color: #fff;}
+.stan1 .b1{background-color: #000000; color: #fff;}
+.stan1 .b2{
+    background-color: #FFFFFF; box-sizing: border-box;
+    border: 1px solid #000;
+}
 /* cont3 끝 */
 .stan2{flex-flow: row-reverse wrap; padding-top:240px;}
 .sImg2{height: 560px;}
-.sImg2 .iMac .screen{background-image: url(../images/c2_stan_s2.jpg);}
+.sImg2 .iMac .screen{background-image: url(../images/c2_stan_s1.jpg);}
 .sImg2 .iMac .screen:hover{background-position: 0 -690px;}
 .sImg2 .more{bottom: -3px; right: 0;}
-.sImg2 .more:hover{color:#444;}
+.sImg2 .more:hover{color:#6ACAAE;}
 .sImg2 .more p{margin-left: 8px;}
 .sImg2 .more .moreBtn{animation:btnR 1s infinite linear normal;}
 .stan2 .b1{background-color: #000000; color: #fff;}
