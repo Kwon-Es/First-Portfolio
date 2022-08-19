@@ -11,6 +11,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/a274117f0f.js" crossorigin="anonymous"></script>
 </head>
@@ -150,14 +151,9 @@
                         <i class="fa-solid fa-angles-right moreBtn"></i>
                     </a></div><!-- more -->
                     <div class="hoverS">
-                        <i class="fa-solid fa-arrow-pointer cursor"></i>
-                        <p>Hover Here!</p> 
+                        <p>Hover Here!</p>
+                        <i class="fa-solid fa-hand-point-down cursor"></i>
                     </div><!-- hoverS -->
-                    <!-- <div class="point">
-                        <p class="p1"></p>
-                        <p class="p2"></p>
-                        <p class="p3"></p>
-                    </div> --><!-- point -->
                 </div><!-- rImg rImg1 -->
                 <div class="cTxt right">
                     <div class="brand">
@@ -419,6 +415,23 @@
             <li class="goTop"><i class="fa-solid fa-chevron-up top"></i></li>
             <li class="goBtm"><i class="fa-solid fa-chevron-down btm"></i></li>
         </ul><!-- go -->
+        <div class="modal">
+            <div class="modalin">
+                <div class="mdIcon">
+                    <p class="arlet"><i class="fa-solid fa-exclamation aIcon"></i></p>
+                    <p class="check"><i class="fa-solid fa-check cIcon"></i></p>
+                </div><!-- mdIcon -->
+                <p class="mdTxt md1">본 사이트는 Chrome 브라우저(1920*1080)에 최적화되어 있습니다.</p>
+                <p class="mdTxt md2">※ 본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.<br>일부 내용 및 폰트, 이미지 등은 그 출처가 따로 있음을 밝힙니다.</p>
+                <div class="mdBtn">
+                    <p>
+                        <input type="checkbox" name="eXmodal" id="eXmodal">
+                        <label for="eXmodal">다시 보지 않기</label>
+                    </p>
+                    <p class="closeMD">확인</p>
+                </div>
+            </div><!-- modalin -->
+        </div><!-- modal -->
     </div><!-- wrap -->
 </body>
 </html>
