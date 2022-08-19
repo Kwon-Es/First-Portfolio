@@ -9,7 +9,7 @@ $(function(){ //opening
 
     //5-2.확인 버튼 클릭 시, modal 창 스르륵 사라지기
     //eXmodal 체크 후, 버튼 클릭 시, modal 창 뜨지 않게 하기
-    //★★★★★모달창 잔상, 로드시 스르륵 나타나기
+    //★★★★★모달창 잔상
     if($.cookie('modal') == 'none'){
         $('.modal').hide();
     };
@@ -48,45 +48,21 @@ $(function(){ //opening
     //#header bg-color 변경, border-btm, gnb, black 나타나기
     //openM 숨기고 closeM 나타나기, gnb right 변경
     //closeM 클릭 시 removeClass, gnb right 변경
-    //★★★★★버튼을 먼저 클릭하고 스크롤 발생 시 openM 버튼 남는 현상
     $('.openM').on('click', function(){
         $(this).addClass('on');
         $('#header, .gnb, .black, .closeM').addClass('on');
-        $('.gnb').animate({
+        $('.gnb').stop().animate({
             right:102
         });
     });
-    
     $('.closeM').on('click', function(){
         $(this).removeClass('on')
         $('#header, .gnb, .black, .openM').removeClass('on');
-        $('.gnb').animate({
+        $('.gnb').stop().animate({
             right:0
         });
     });
 
-    /* $('.openM').on('click', function(){
-        let scr = $('html, body').scrollTop();
-
-        if(scr == 0){
-            $(this).addClass('on');
-            $('#header, .gnb, .black, .closeM').addClass('on');
-            $('.gnb').animate({
-                right:102
-            });
-        } else{
-            $('.closeM').removeClass('on')
-        }
-    });
-    
-    $('.closeM').on('click', function(){
-        $(this).removeClass('on')
-        $('#header, .gnb, .black, .openM').removeClass('on');
-        $('.gnb').animate({
-            right:0
-        });
-    });
- */
     //2-2. 스크롤 발생 시 동작
     //메뉴영역 나타나고 사라지기
     $(window).on('scroll', function(){
@@ -94,8 +70,12 @@ $(function(){ //opening
 
         if(scr > 0){
             $('#header, .gnb, .black, .openM').addClass('on');
+            $('.closeM').removeClass('on');
+            $('.gnb').stop().animate({
+                right:0
+            });
         }else{
-            $('#header, .gnb, .black, .openM').removeClass('on');
+            $('#header, .gnb, .black, .openM, closeM').removeClass('on');
         };
     });
     
@@ -157,9 +137,10 @@ $(function(){ //opening
     
     //3.Mainvisual
     //load 했을 때, .double, mvTxt 스르륵 나타나기
-    $(window).on('load', function(){
+    /* $(window).on('load', function(e){
+        e.preventDefault();
         mainV();
-    });
+    }); */
 
 
     //4.About

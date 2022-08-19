@@ -67,6 +67,9 @@ img{vertical-align: top;}
     background-color: #000;
     color:#fff;
 }
+.stan2 br::selection{
+    background-color: #000;
+}
 .stan2 h5::selection{
     background-color: #000;
     color:#fff;
