@@ -4,7 +4,7 @@ $(function(){ //opening
     //1.Modal
     //5.확인 버튼 클릭 시, modal 창 스르륵 사라지기
     //eXmodal 체크 후, 버튼 클릭 시, modal 창 뜨지 않게 하기
-    //★★★★★모달창 잔상
+    //★★★★★모달창 잔상(쿠키 점멸 오류)
     if($.cookie('modal') == 'none'){
         $('.modal').hide();
     };
@@ -34,6 +34,7 @@ $(function(){ //opening
     $('.closeMD').on('click', function(){
         $('.check').addClass('on');
         closeModal();
+        /* $('.modal').delay(400).fadeOut(300); */
         setInterval(mainV, 700);
     });
 
@@ -135,6 +136,7 @@ $(function(){ //opening
         e.preventDefault();
         mainV();
     }); */
+    
 
 
     //4.About

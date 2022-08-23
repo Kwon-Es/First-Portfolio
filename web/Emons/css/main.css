@@ -211,10 +211,12 @@
 /*** cont1:brand 끝 ***/
 .cur{width: 100%;}
 .curin{width: calc(100% - 40px); margin: 0 auto 0;}
-.cimgM{width: 100%; height: auto;}
-.cimgPC{display: none;}
-.curL{position: relative;}
-.curL .slick-dots{
+.curL>li{display: none;}
+.curL>li.on{display: block;}
+/* .cimgM{width: 100%; height: auto;}
+.cimgPC{display: block;} */
+/* .curL{position: relative;} */
+/* .curL .slick-dots{
     Position: absolute;
     bottom: 20px; left: 50%; transform: translateX(-50%);
     display: flex; flex-flow: row wrap;
@@ -227,7 +229,7 @@
     background-color: #fff;
     font-size: 0;  cursor: pointer;
 }
-.curL .slick-dots li.slick-active button{background-color: #14008c;}
+.curL .slick-dots li.slick-active button{background-color: #14008c;} */
 .curL li a{display: block;}
 .curR li{
     display: none;
@@ -240,6 +242,7 @@
 .curR li .moreBtn{
     margin: 15px auto 0;
 }
+.curPager{position: absolute; bottom: 0; right: 0;}
 /*** cont2:curation 끝 ***/
 #container .promo{margin-bottom: 45px;}
 .promo{
@@ -256,19 +259,19 @@
 }
 .dList .slick-arrow{
     border: 0; background-color: transparent; outline: none;
-    width: 20px; height: 20px;
-    border-top: 2px solid #000;
-    border-right: 2px solid #000;
+    width: 30px; height: 30px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
     font-size: 0;
     cursor: pointer;
     position: absolute; top:50%; transform: translateY(-50%);
 }
 .dList .slick-prev{
-    left:-25px; z-index: 10;
+    left:-96px; z-index: 10;
     transform: rotate(-135deg);
 }
 .dList .slick-next{
-    right:-25px;
+    right:-96px;
     transform: rotate(45deg);
 }
 .dList .slick-list{margin-right: -16px;}
@@ -355,6 +358,27 @@
 .vrin{width: calc(100% - 40px); margin: 0 auto; padding-bottom: 65px;}
 .vrin .titM{padding-top: 45px;}
 .vrR li img{width: 100%; height: auto;}
+.vrR .slick-arrow{
+    border: 0; background-color: transparent; outline: none;
+    width: 20px; height: 20px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    font-size: 0;
+    cursor: pointer;
+    position: absolute; top:50%; transform: translateY(-50%);
+}
+.vrR .slick-prev{
+    left:20px; z-index: 10;
+    transform: rotate(-135deg);
+}
+.vrR .slick-next{
+    right:20px;
+    transform: rotate(45deg);
+}
+.vrR .slick-list{margin-right: -16px;}
+.vrR .slick-slide{margin-right: 16px;}
+
+
 .vrL{
     display: flex;
     flex-flow: row wrap;

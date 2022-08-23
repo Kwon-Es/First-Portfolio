@@ -136,29 +136,34 @@ $(function(){ //opening
     
 
     //7. Floating
-    //7-1.플로팅바 버튼 클릭 시, 100vh 상하 이동
+    //7-1.플로팅바 버튼 클릭 시, 100vh 만큼 상하 이동
     //버튼 클릭 횟수에 따라 순서에 맞는 section 보여주기
+    $('.up').on('click', function(){
+        let winHeight = $(window).height();
+        let s = $('html, body').scrollTop();
+        let i = s - winHeight;
+        console.log(i);
+        console.log(s);
+        console.log(winHeight);
 
-/*     
-    let up = 0;
-    function moveUp(){
-        for(let up = 0; up < 4; up--){
-            $('#wrap').animate({top:`100vh` * up})
-        }
-    };
-    $('.up').on('click', moveUp); */
-/*     let winHeight = $(window).height();
-    function moveUp(){
-        let si = $('section').index();
-            console.log(si);
-            $('html, body').animate({
-                scrollTop: `-${winHeight} * ${si++}`
-            });
-        //클릭이벤트
-    };
+        $('html, body').animate({
+            scrollTop:`${i}`
+        })
+    });
+
     $('.down').on('click', function(){
-        moveUp();
-    }); */
+        let winHeight = $(window).height();
+        let s = $('html, body').scrollTop();
+        let i = s + winHeight ;
+   
+        console.log(i);
+        console.log(s);
+        console.log(winHeight);
+
+        $('html, body').animate({
+            scrollTop:`${i}`
+        })
+    });
     
     //7-2.일정값 이상 스크롤했을 때 플로팅바 나타나기
     $(window).on('scroll',function(){
