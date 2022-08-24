@@ -36,7 +36,7 @@
     width: 100%; height: auto;
     max-width: 480px;
     background-color: #fff;
-    z-index: 300;
+    z-index: 50;
     display: block;
 }
 .util{
@@ -773,7 +773,7 @@
         width: 100%; height: 344px;
         background-color: rgba(255,255,255,0.9);
         position: absolute;
-        top:122px; left:0;
+        top:122px; left:0; z-index: 100;
     
     }
     .headerWrap{
@@ -814,7 +814,7 @@
     .showSc a{display: block;}
     .showSc a .isc{color: #353535;}
     .scBox{
-        display: none;
+        display: none; z-index: 50;
         margin: 0 0; padding: 30px 30px 40px;
         position: absolute; top:122px; right: 0;
         background-color: #fff;
@@ -825,17 +825,18 @@
     .closeM{display: none;}
     .gnb{
         padding-top: 0px;
-        position: absolute; top:70px; right:78px;
+        position: absolute; top:61px; right:78px;
         text-indent: 0px;
     }
     .depth1{float: left;}
-    .depth1 h3{padding:0px 0px 0px 0; width: 121px;}
+    .depth1 h3{padding:0px 0px 0px 0; width: 121px; height: 34px; line-height: 34px;}
+    .depth1 h3 a{display: block;}
    /*  .depth1 h3:hover ~ .depth2{display: block;} */
     .depth2{
         display: none;  max-width: 121px;
-        margin: 40px 0 0 ; text-indent:0px;
+        padding: 40px 0 0 ; text-indent:0px;
         position: relative;
-        background-color: transparent;
+        background-color: transparent; z-index: 100;
     }
     .depth2 li p{background-color:transparent;}
     .depth2 li p .isub{
@@ -854,7 +855,7 @@
         padding:0px 0px 0px ;
         border-top: none;
         border-bottom: none;
-        position: absolute; top:2px; left:121px;
+        position: absolute; top:42px; left:121px;
         width: 121px;
     }
     .depth3 li a{
@@ -906,10 +907,12 @@
     .cimgPC .slick-prev{left:20px;}
     .cimgPC .slick-next{right:20px;}
     .curR{float: right;}
-    .curR>li.on{display: block;}
+    .curR>li.on{display: block; height: 446px;}
+    .curTxt .mainTit br{display: block;}
+    .mainTit{line-height: 46px; margin-top: -4px;}
     .curPager{
         width: 324px; display: flex; flex-flow: row wrap;
-        margin: 106px 0 0;
+        bottom: 0; margin: 0px auto 0;
     }
     .curPager li{width: 108px; height: 4px; border-radius: 0;}
 
@@ -959,6 +962,7 @@
     .vrR li img{width: 792px; height: auto;}
     .vrL{float: left;}
     .vrL{display: block;}
+    .vrTxt .subTit{line-height: 28px;}
     .vrTxt .subTit span{display: block;}
     .goBtn{width: 78px; height: 34px; margin-top: 0px;}
     .goBtn a{font-size: 17px; line-height: 34px;}

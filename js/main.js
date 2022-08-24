@@ -7,6 +7,7 @@ $(function(){ //opening
     //★★★★★모달창 잔상(쿠키 점멸 오류)
     if($.cookie('modal') == 'none'){
         $('.modal').hide();
+        mainV();
     };
 
     function closeModal(){
@@ -128,15 +129,6 @@ $(function(){ //opening
         e.preventDefault();
         location.reload();
     });
-
-    
-    //3.Mainvisual
-    //load 했을 때, .double, mvTxt 스르륵 나타나기
-    /* $(window).on('load', function(e){
-        e.preventDefault();
-        mainV();
-    }); */
-    
 
 
     //4.About
