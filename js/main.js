@@ -6,7 +6,7 @@ $(function(){ //opening
     //eXmodal 체크 후, 버튼 클릭 시, modal 창 뜨지 않게 하기
     //★★★★★모달창 잔상(쿠키 점멸 오류)
     if($.cookie('modal') == 'none'){
-        $('.modal').hide();
+        $('.modal').addClass('on');
         mainV();
     };
 
@@ -14,7 +14,7 @@ $(function(){ //opening
         if($('#eXmodal').is(':checked')){
             $.cookie('modal','none',{expires:10000, path:'/'});
         };
-        $('.modal').delay(400).fadeOut(300);
+        $('.modal').delay(400).fadeOut(300)
 
         return
     };
