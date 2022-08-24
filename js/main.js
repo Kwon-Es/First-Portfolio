@@ -5,8 +5,28 @@ $(function(){ //opening
     //5.확인 버튼 클릭 시, modal 창 스르륵 사라지기
     //eXmodal 체크 후, 버튼 클릭 시, modal 창 뜨지 않게 하기
     //★★★★★모달창 잔상(쿠키 점멸 오류)
-    if($.cookie('modal') == 'none'){
-        $('.modal').addClass('on');
+    function mainV(){
+        $('.double').stop().animate({
+            bottom:0
+        }, 700)
+        $('.mvTxt h2').fadeIn(1000);
+        $('.mvTxt .bar').stop().animate({
+            height:10
+        },500);
+        $('.mainWords').stop().animate({
+            marginRight:0
+        }, 700)
+    };
+
+    $('.closeMD').on('click', function(){
+        $('.check').addClass('on');
+        $('.modal').delay(400).fadeOut(300)
+        setInterval(mainV, 700);
+    });
+
+    //쿠키 추가했을 때
+    /* if($.cookie('modal') == 'none'){
+        $('.modal').hide();
         mainV();
     };
 
@@ -35,9 +55,8 @@ $(function(){ //opening
     $('.closeMD').on('click', function(){
         $('.check').addClass('on');
         closeModal();
-        /* $('.modal').delay(400).fadeOut(300); */
         setInterval(mainV, 700);
-    });
+    }); */
 
 
     //2.Header
