@@ -361,7 +361,7 @@
 .rWrap .slick-dots li{ margin-right: 18px;}
 .all .rWrap .slick-dots li{ margin-right: 9px;}
 /* .rWrap .slick-dots li:nth-child(2n){display: none;} */
-.rWrap .slick-dots li:last-child{margin-right: 0;}
+/* .rWrap .slick-dots li:last-child{margin-right: 0;} */
 .rWrap .slick-dots li button{
     width: 14px; height: 14px;
     border-radius: 50%; border: 0;
@@ -375,8 +375,8 @@
 .rWrap li a{display: block;}
 .rWrap li a .rImg img{width:100%; height: auto;}
 .rTit{
-    width: calc((100% - 16px)/2);
-    margin: 16px 0 10px;
+    width: /* calc((100% - 16px)/2) */100%;
+    margin: 16px 0 10px; line-height: 18px;
     font-family: 'MinSans-Medium'; font-size: 14px; 
 }
 .rId{
@@ -544,13 +544,10 @@
     .review{width: calc(100% - 40px); margin: 0 auto;}
     .tabM{margin-bottom: 16px;}
     .rWrap{display: flex; flex-flow: row nowrap; justify-content: space-between;}
-    .rWrap li{width: 100%; margin-right: 16px;}
-    .rWrap li:nth-child(3){margin-right: 0px;}
-    .rWrap li:nth-child(4){display: none;}
-    .all .rWrap li:nth-child(3){margin-right: 16px;}
+    .rWrap li{width: 100%;}
+    .rWrap li:nth-child(3n){margin-right: 16px;}
     .all .rWrap li:nth-child(4){display: block;}
     .rWrap li a .rImg img{width: 100%; height: auto;}
-    .rTit{width: 100%;}
     .sTit{font-size: 15px;}
     .bar{margin: 10px auto 10px;}
     .sCont{display: block; font-size: 12px;}
@@ -695,7 +692,7 @@
     .rWrap li{width: 100%; margin-right: 20px;}
     .dList .slick-list{margin-right: -20px;}
     .dList .slick-slide{margin-right: 20px;}
-    .rTit{margin: 20px 0 15px; font-size: 15px;}
+    .rTit{margin: 20px 0 15px; font-size: 15px; line-height: 20px;}
     .rId{margin-bottom: 2px;}
 
     .vr{margin-bottom: 55px;}
@@ -944,10 +941,7 @@
     .tabM{margin-bottom: 24px;}
     .tabM div{width: 134px; font-size: 19px;}
     .rWrap li{margin-right: 24px;}
-    .rWrap li:nth-child(3){margin-right: 24px;}
-    .rWrap li:nth-child(4){display: block; margin-right: 0px;}
-    .all .rWrap li:nth-child(4){margin-right: 24px;}
-    .rTit{margin: 24px 0 25px; font-size: 17.5px;}
+    .rTit{margin: 24px 0 25px; font-size: 17.5px; line-height: 22px;}
     .rId{font-size: 14px; margin-bottom: 8px;}
     .rDate{font-size: 12px;}
 
