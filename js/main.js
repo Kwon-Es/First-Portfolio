@@ -1,6 +1,6 @@
 $(function(){ //opening
     
-    
+   
     //1.Modal
     //5.확인 버튼 클릭 시, modal 창 스르륵 사라지기
     //eXmodal 체크 후, 버튼 클릭 시, modal 창 뜨지 않게 하기

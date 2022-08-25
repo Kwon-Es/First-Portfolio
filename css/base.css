@@ -25,7 +25,8 @@ body::-webkit-scrollbar-thumb{
 ul{list-style: none;}
 li{list-style: none;}
 a{text-decoration: none; color: inherit;}
-img{vertical-align: top;}
+img{vertical-align: top; -webkit-user-drag: none; user-select: none;}
+/* 이미지 드래그 방지 */
 .clear::after {display: block; content: ''; clear: both;}
 
 /* 드래그 효과*/

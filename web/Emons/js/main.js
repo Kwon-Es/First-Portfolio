@@ -1,5 +1,6 @@
 $(function(){
 
+
     //1.Header
     let winWidth = $(window).width();
 
