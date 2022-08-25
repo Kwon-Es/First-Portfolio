@@ -32,9 +32,9 @@ $(function(){ //opening
         slidesToScroll:1, //스크를시 이동할 이미지 개수
         arrows:false,//기본값, 사용함
         dots:true, //pager 사용 여부, 기본값:false
-        speed:500,//다음페이지로 넘어가는 시간
+        speed:600,//다음페이지로 넘어가는 시간
         autoplay:true, //자동재생 여부, 포트폴리오에서는 항상 켜놓기
-        autoplaySpeed:1000, //자동재생시 이미지가 유지되는 시간
+        autoplaySpeed:1100, //자동재생시 이미지가 유지되는 시간
         pauseOnHover:false,//기본값, 마우스 hover시 자동재생 멈춤 여부
         pauseOnFocus: false,
         infinite:true,//무한반복 여부, 마지막 요소>>첫번째 요소
@@ -62,9 +62,9 @@ $(function(){ //opening
         slidesToScroll:1,
         arrows:true,
         dots:false,
-        speed:500,
+        speed:600,
         autoplay:true,
-        autoplaySpeed:1000,
+        autoplaySpeed:1100,
         pauseOnHover:false,
         pauseOnFocus: false,
         infinite:true,
@@ -74,9 +74,10 @@ $(function(){ //opening
 
     //4. Brand
     //탭메뉴 클릭 이벤트, 버튼-이미지 연결
-    //titin li 클릭 시, bpager width 변경
     $('.titin li').on('click', function(){
         let bi = $(this).index();
+        
+        //titin li 클릭 시, bpager width 변경
         if(bi != 3){
             $('.bpager').css({
                 width: `calc((100% - 1200px)/2 + (300px*${bi + 1}))`
@@ -87,7 +88,7 @@ $(function(){ //opening
             });
         }
 
-    //클릭한 li 순서에 맞는 .cont div 보여주기
+        //클릭한 li 순서에 맞는 .cont div 보여주기
         $('.cont>div').eq(bi).show().siblings().hide();
     });
 
@@ -142,9 +143,9 @@ $(function(){ //opening
         let winHeight = $(window).height();
         let s = $('html, body').scrollTop();
         let i = s - winHeight;
-        console.log(i);
+        /* console.log(i);
         console.log(s);
-        console.log(winHeight);
+        console.log(winHeight); */
 
         $('html, body').animate({
             scrollTop:`${i}`
@@ -155,10 +156,6 @@ $(function(){ //opening
         let winHeight = $(window).height();
         let s = $('html, body').scrollTop();
         let i = s + winHeight ;
-   
-        console.log(i);
-        console.log(s);
-        console.log(winHeight);
 
         $('html, body').animate({
             scrollTop:`${i}`
