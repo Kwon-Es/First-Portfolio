@@ -54,6 +54,7 @@ $(function(){
             });
         });
         $('.depth2').on('mouseleave', function(){
+            $(this).find('.depth3').stop().hide();
             $(this).find('.isub').css({
                 transform : `rotate(90deg)`,
                 paddingRight : `2px`
