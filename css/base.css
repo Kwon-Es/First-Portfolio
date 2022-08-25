@@ -34,52 +34,23 @@ img{vertical-align: top; -webkit-user-drag: none; user-select: none;}
     background-color: #013220;
     color:#fff;
 }
-.resp1 p::selection{
+.resp1 p::selection, .resp1 h5::selection, .resp1 li::selection{
     background-color: #14008C;
     color:#fff;
 }
-.resp1 h5::selection{
-    background-color: #14008C;
-    color:#fff;
-}
-.resp2 p::selection{
+.resp2 p::selection, .resp2 h5::selection, .resp2 br::selection, .resp2 li::selection{
     background-color: #E6000F;
     color:#fff;
 }
-.resp2 h5::selection{
-    background-color: #E6000F;
-    color:#fff;
-}
-.resp2 br::selection{
-    background-color: #E6000F;
-}
-.stan1 p::selection{
+.stan1 p::selection, .stan1 h5::selection, .stan1 br::selection, .stan1 li::selection{
     background-color: #000;
     color:#fff;
 }
-.stan1 h5::selection{
-    background-color:#000;
-    color:#fff;
-}
-.stan1 br::selection{
-    background-color: #000;
-}
-.stan2 p::selection{
+.stan2 p::selection, .stan2 br::selection, .stan2 h5::selection, .stan2 li::selection{
     background-color: #6ACAAE;
     color:#fff;
 }
-.stan2 br::selection{
-    background-color: #6ACAAE;
-}
-.stan2 h5::selection{
-    background-color: #6ACAAE;
-    color:#fff;
-}
-.mob p::selection{
-    background-color: #79E1EC;
-    color:#fff;
-}
-.mob h5::selection{
+.mob p::selection, .mob h5::selection, .mob li::selection{
     background-color: #79E1EC;
     color:#fff;
 }
