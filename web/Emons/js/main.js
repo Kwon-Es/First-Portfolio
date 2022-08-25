@@ -282,7 +282,6 @@ $(function(){
     //8-1.일정값 이상 스크롤했을 때 goTop버튼 스르륵 나타나기
     $(window).on('scroll',function(){
         let scr = $('html, body').scrollTop();
-        console.log(scr);
 
         if( scr > 1100 ){
             $('.goTop').addClass('on')
