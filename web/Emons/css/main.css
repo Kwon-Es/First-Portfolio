@@ -513,12 +513,12 @@
 .fsns li a{display: block;}
 .fsns li a img{width: 100%; height: auto;}
 .goTop{
-    position: fixed; bottom: 20px; right:20px;
+    position: fixed; bottom: 20px; right:20px; cursor: pointer;
     width: 40px; height: auto; opacity: 0; transition: 0.4s;
 }
 .goTop.on{opacity: 1;}
-.goTop a{display: block;}
-.goTop a img{width: 100%; height: auto;}
+.goTop:hover{opacity: 0.7;}
+.goTop img{width: 100%; height: auto;}
 /********** 모바일(360~479px)끝 **********/
 
 @media all and (min-width:480px){
